@@ -1,0 +1,230 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\Box2D\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\freetype2\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\recast\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\uv\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\websockets\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\tinyxml2\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\xxhash\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\xxtea\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\clipper\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\edtaa3func\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\ConvertUTF\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\poly2tri\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\md5\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\curl\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\cpufeatures\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\pvmp3dec\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\tremolo\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\unzip\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\platform\\android\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "ext_tremolo-Release-armeabi-v7a": {
+      "artifactName": "ext_tremolo",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_tremolo",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_tremolo.a"
+    },
+    "MyGame-Release-armeabi-v7a": {
+      "artifactName": "MyGame",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target MyGame",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libMyGame.so"
+    },
+    "ext_xxhash-Release-armeabi-v7a": {
+      "artifactName": "ext_xxhash",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_xxhash",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_xxhash.a"
+    },
+    "ext_cpufeatures-Release-armeabi-v7a": {
+      "artifactName": "ext_cpufeatures",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_cpufeatures",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a"
+    },
+    "ext_box2d-Release-armeabi-v7a": {
+      "artifactName": "ext_box2d",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\Box2D\\prebuilt\\android\\armeabi-v7a\\libbox2d.a"
+    },
+    "external-Release-armeabi-v7a": {
+      "artifactName": "external",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target external",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libexternal.a"
+    },
+    "ext_webp-Release-armeabi-v7a": {
+      "artifactName": "ext_webp",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\prebuilt\\android\\armeabi-v7a\\libwebp.a"
+    },
+    "ext_curl-Release-armeabi-v7a": {
+      "artifactName": "ext_curl",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\curl\\prebuilt\\android\\armeabi-v7a\\libcurl.a"
+    },
+    "ext_convertUTF-Release-armeabi-v7a": {
+      "artifactName": "ext_convertUTF",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_convertUTF",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_convertUTF.a"
+    },
+    "ext_tinyxml2-Release-armeabi-v7a": {
+      "artifactName": "ext_tinyxml2",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_tinyxml2",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_tinyxml2.a"
+    },
+    "cpp_android_spec-Release-armeabi-v7a": {
+      "artifactName": "cpp_android_spec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target cpp_android_spec",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\engine\\cocos\\platform\\libcpp_android_spec.a"
+    },
+    "ext_websockets-Release-armeabi-v7a": {
+      "artifactName": "ext_websockets",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\websockets\\prebuilt\\android\\armeabi-v7a\\libwebsockets.a"
+    },
+    "ext_png-Release-armeabi-v7a": {
+      "artifactName": "ext_png",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\prebuilt\\android\\armeabi-v7a\\libpng.a"
+    },
+    "ext_clipper-Release-armeabi-v7a": {
+      "artifactName": "ext_clipper",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_clipper",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_clipper.a"
+    },
+    "ext_md5-Release-armeabi-v7a": {
+      "artifactName": "ext_md5",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_md5",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_md5.a"
+    },
+    "bulletmultithreaded-Release-armeabi-v7a": {
+      "artifactName": "bulletmultithreaded",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libBulletMultiThreaded.a"
+    },
+    "ext_freetype-Release-armeabi-v7a": {
+      "artifactName": "ext_freetype",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\freetype2\\prebuilt\\android\\armeabi-v7a\\libfreetype.a"
+    },
+    "ext_unzip-Release-armeabi-v7a": {
+      "artifactName": "ext_unzip",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_unzip",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_unzip.a"
+    },
+    "ext_xxtea-Release-armeabi-v7a": {
+      "artifactName": "ext_xxtea",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_xxtea",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_xxtea.a"
+    },
+    "ext_jpeg-Release-armeabi-v7a": {
+      "artifactName": "ext_jpeg",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\prebuilt\\android\\armeabi-v7a\\libjpeg.a"
+    },
+    "ext_recast-Release-armeabi-v7a": {
+      "artifactName": "ext_recast",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_recast",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_recast.a"
+    },
+    "ext_bullet-Release-armeabi-v7a": {
+      "artifactName": "ext_bullet",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libLinearMath.a"
+    },
+    "ext_edtaa3func-Release-armeabi-v7a": {
+      "artifactName": "ext_edtaa3func",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_edtaa3func",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_edtaa3func.a"
+    },
+    "linearmath-Release-armeabi-v7a": {
+      "artifactName": "linearmath",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libLinearMath.a"
+    },
+    "ext_pvmp3dec-Release-armeabi-v7a": {
+      "artifactName": "ext_pvmp3dec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_pvmp3dec",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_pvmp3dec.a"
+    },
+    "ext_crypto-Release-armeabi-v7a": {
+      "artifactName": "ext_crypto",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\armeabi-v7a\\libcrypto.a"
+    },
+    "ext_ssl-Release-armeabi-v7a": {
+      "artifactName": "ext_ssl",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\armeabi-v7a\\libssl.a"
+    },
+    "bulletdynamics-Release-armeabi-v7a": {
+      "artifactName": "bulletdynamics",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libBulletDynamics.a"
+    },
+    "cocos2d-Release-armeabi-v7a": {
+      "artifactName": "cocos2d",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target cocos2d",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libcocos2d.a"
+    },
+    "ext_uv-Release-armeabi-v7a": {
+      "artifactName": "ext_uv",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\uv\\prebuilt\\android\\armeabi-v7a\\libuv_a.a"
+    },
+    "ext_poly2tri-Release-armeabi-v7a": {
+      "artifactName": "ext_poly2tri",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a --target ext_poly2tri",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\armeabi-v7a\\lib\\libext_poly2tri.a"
+    },
+    "ext_chipmunk-Release-armeabi-v7a": {
+      "artifactName": "ext_chipmunk",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\prebuilt\\android\\armeabi-v7a\\libchipmunk.a"
+    },
+    "ext_zlib-Release-armeabi-v7a": {
+      "artifactName": "ext_zlib",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\prebuilt\\android\\armeabi-v7a\\libz.a"
+    },
+    "bulletcollision-Release-armeabi-v7a": {
+      "artifactName": "bulletcollision",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libBulletCollision.a"
+    },
+    "minicl-Release-armeabi-v7a": {
+      "artifactName": "minicl",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\armeabi-v7a\\libMiniCL.a"
+    }
+  }
+}

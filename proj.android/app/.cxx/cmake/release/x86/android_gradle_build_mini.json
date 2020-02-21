@@ -1,0 +1,230 @@
+{
+  "buildFiles": [
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\Box2D\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\freetype2\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\recast\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\uv\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\websockets\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\tinyxml2\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\xxhash\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\xxtea\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\clipper\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\edtaa3func\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\ConvertUTF\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\poly2tri\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\md5\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\curl\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\cpufeatures\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\pvmp3dec\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\tremolo\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\unzip\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\platform\\android\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target clean"
+  ],
+  "libraries": {
+    "ext_pvmp3dec-Release-x86": {
+      "artifactName": "ext_pvmp3dec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_pvmp3dec",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_pvmp3dec.a"
+    },
+    "ext_webp-Release-x86": {
+      "artifactName": "ext_webp",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\prebuilt\\android\\x86\\libwebp.a"
+    },
+    "ext_recast-Release-x86": {
+      "artifactName": "ext_recast",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_recast",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_recast.a"
+    },
+    "ext_ssl-Release-x86": {
+      "artifactName": "ext_ssl",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libssl.a"
+    },
+    "ext_tremolo-Release-x86": {
+      "artifactName": "ext_tremolo",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_tremolo",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_tremolo.a"
+    },
+    "bulletmultithreaded-Release-x86": {
+      "artifactName": "bulletmultithreaded",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletMultiThreaded.a"
+    },
+    "ext_jpeg-Release-x86": {
+      "artifactName": "ext_jpeg",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\prebuilt\\android\\x86\\libjpeg.a"
+    },
+    "ext_edtaa3func-Release-x86": {
+      "artifactName": "ext_edtaa3func",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_edtaa3func",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_edtaa3func.a"
+    },
+    "minicl-Release-x86": {
+      "artifactName": "minicl",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libMiniCL.a"
+    },
+    "ext_unzip-Release-x86": {
+      "artifactName": "ext_unzip",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_unzip",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_unzip.a"
+    },
+    "MyGame-Release-x86": {
+      "artifactName": "MyGame",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target MyGame",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libMyGame.so"
+    },
+    "ext_md5-Release-x86": {
+      "artifactName": "ext_md5",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_md5",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_md5.a"
+    },
+    "ext_png-Release-x86": {
+      "artifactName": "ext_png",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\prebuilt\\android\\x86\\libpng.a"
+    },
+    "ext_curl-Release-x86": {
+      "artifactName": "ext_curl",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\curl\\prebuilt\\android\\x86\\libcurl.a"
+    },
+    "ext_box2d-Release-x86": {
+      "artifactName": "ext_box2d",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\Box2D\\prebuilt\\android\\x86\\libbox2d.a"
+    },
+    "ext_poly2tri-Release-x86": {
+      "artifactName": "ext_poly2tri",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_poly2tri",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_poly2tri.a"
+    },
+    "ext_xxtea-Release-x86": {
+      "artifactName": "ext_xxtea",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_xxtea",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxtea.a"
+    },
+    "ext_clipper-Release-x86": {
+      "artifactName": "ext_clipper",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_clipper",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_clipper.a"
+    },
+    "ext_bullet-Release-x86": {
+      "artifactName": "ext_bullet",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a"
+    },
+    "external-Release-x86": {
+      "artifactName": "external",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target external",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libexternal.a"
+    },
+    "bulletdynamics-Release-x86": {
+      "artifactName": "bulletdynamics",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletDynamics.a"
+    },
+    "ext_cpufeatures-Release-x86": {
+      "artifactName": "ext_cpufeatures",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_cpufeatures",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a"
+    },
+    "linearmath-Release-x86": {
+      "artifactName": "linearmath",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a"
+    },
+    "ext_freetype-Release-x86": {
+      "artifactName": "ext_freetype",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\freetype2\\prebuilt\\android\\x86\\libfreetype.a"
+    },
+    "ext_convertUTF-Release-x86": {
+      "artifactName": "ext_convertUTF",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_convertUTF",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_convertUTF.a"
+    },
+    "bulletcollision-Release-x86": {
+      "artifactName": "bulletcollision",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletCollision.a"
+    },
+    "ext_websockets-Release-x86": {
+      "artifactName": "ext_websockets",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\websockets\\prebuilt\\android\\x86\\libwebsockets.a"
+    },
+    "cpp_android_spec-Release-x86": {
+      "artifactName": "cpp_android_spec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target cpp_android_spec",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\engine\\cocos\\platform\\libcpp_android_spec.a"
+    },
+    "ext_zlib-Release-x86": {
+      "artifactName": "ext_zlib",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\prebuilt\\android\\x86\\libz.a"
+    },
+    "ext_chipmunk-Release-x86": {
+      "artifactName": "ext_chipmunk",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\prebuilt\\android\\x86\\libchipmunk.a"
+    },
+    "ext_tinyxml2-Release-x86": {
+      "artifactName": "ext_tinyxml2",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_tinyxml2",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_tinyxml2.a"
+    },
+    "ext_uv-Release-x86": {
+      "artifactName": "ext_uv",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\uv\\prebuilt\\android\\x86\\libuv_a.a"
+    },
+    "ext_xxhash-Release-x86": {
+      "artifactName": "ext_xxhash",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target ext_xxhash",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libext_xxhash.a"
+    },
+    "cocos2d-Release-x86": {
+      "artifactName": "cocos2d",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target cocos2d",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\lib\\libcocos2d.a"
+    },
+    "ext_crypto-Release-x86": {
+      "artifactName": "ext_crypto",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libcrypto.a"
+    }
+  }
+}
