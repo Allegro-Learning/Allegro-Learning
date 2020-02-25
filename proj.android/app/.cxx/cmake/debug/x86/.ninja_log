@@ -646,3 +646,5 @@
 558622	568526	0	CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o	871b7cca4c0d4531
 558631	568632	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	b87bf618d29024f9
 568632	574214	0	../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so	c5979776afea0a86
+136	6923	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	b87bf618d29024f9
+6923	11234	0	../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so	c5979776afea0a86
