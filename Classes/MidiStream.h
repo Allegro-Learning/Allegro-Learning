@@ -10,7 +10,7 @@ private:
 public:
     virtual bool init();
     virtual void update(int tick);
-    virtual Vector<char*> messages();
+    virtual Vector<char*> messages() = 0;
 }
 
 #endif
