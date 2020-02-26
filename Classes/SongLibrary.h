@@ -11,7 +11,7 @@ private:
 public:
     virtual bool init();
 
-    Vector getSongNames();
+    Vector<SongLevel> getSongNames();
 
     SongLevel loadSong();
 }
