@@ -1,0 +1,6 @@
+[submodule "midifile"]
+	path = midifile
+	url = https://github.com/craigsapp/midifile
+[submodule "catch"]
+	path = catch
+	url = https://github.com/catchorg/Catch2.git
