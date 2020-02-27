@@ -18,4 +18,5 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: ./gradlew build
+      working-directory: ./proj.android
+      run: ./gradlew :AllegroLearning:build
