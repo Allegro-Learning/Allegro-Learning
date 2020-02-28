@@ -23,11 +23,10 @@ jobs:
         chmod +x ./gradlew
         ./gradlew build
     - uses: "marvinpinto/action-automatic-releases@latest"
-      working-directory: ./proj.android/app/build/outputs/apk/release
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: true
         title: "Development Build"
         files: |
-          *.apk
+          ./proj.android/app/build/outputs/apk/release/*.apk
