@@ -21,4 +21,13 @@ jobs:
       working-directory: ./proj.android
       run: |
         chmod +x ./gradlew
-        ./gradlew :AllegroLearning:build
+        ./gradlew build
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      working-directory: ./proj.android/app/build/outputs/apk/release
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "Development Build"
+        files: |
+          *.apk

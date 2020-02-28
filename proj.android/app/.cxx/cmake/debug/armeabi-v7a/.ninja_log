@@ -639,4 +639,10 @@
 586941	591611	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUGravityAffector.cpp.o	28c1d8a079390104
 587623	592594	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneColliderTranslator.cpp.o	e7af1da93e3c2feb
 588727	593277	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollowerTranslator.cpp.o	1494a77e1b35a68b
-590525	593953	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneCollider.cpp.o	7de1c7b0e9
+590525	593953	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneCollider.cpp.o	7de1c7b0e961	3309	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPathFollower.cpp.o	16bb718b6a18adff
+55	3314	0	engine/cocos/core/CMakeFiles/cocos2d.dir/__/extensions/Particle3D/PU/CCPUPlaneCollider.cpp.o	7de1c7b0e9ea80d0
+3314	22605	0	lib/libcocos2d.a	375848da2d31bcbd
+22622	29359	0	CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o	564a020dd18e93f0
+22605	30157	0	CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o	425b967bd7a9deef
+22625	30255	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	38bd92283e4631b3
+30256	36579	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libMyGame.so	6c0947b8982c7604

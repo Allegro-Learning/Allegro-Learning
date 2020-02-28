@@ -46,7 +46,9 @@
     "gradleBuildOutputFolder": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cxx\\release",
     "isDebuggableEnabled": false,
     "validAbiList": [
-      "ARMEABI_V7A"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86"
     ],
     "buildTargetSet": [
       "MyGame"
