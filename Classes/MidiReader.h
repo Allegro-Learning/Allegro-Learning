@@ -2,6 +2,7 @@
 #ifndef __MIDIREADER_H__
 #define __MIDIREADER_H__
 
+#include <AMidi.h>
 #include "cocos2d.h"
 #include "MidiStream.h"
 
