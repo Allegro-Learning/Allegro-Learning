@@ -1,2 +1,1 @@
-[1/2] Building CXX object CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
-[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libMyGame.so
+ninja: no work to do.

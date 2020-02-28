@@ -3,8 +3,9 @@
 
 typedef struct GameSettings {
 public:
-    float DELAY;
-    float NOTE_SPEED;
+    float DELAY = 0.0f;
+    float NOTE_SPEED = 1.0f;
+    int OCTAVE_RANGE = 1;
 } GameSettings;
 
 extern GameSettings GAME_SETTINGS;
