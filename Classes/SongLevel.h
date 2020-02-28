@@ -19,15 +19,17 @@ public:
 private:
     MidiStream* inst_midi;
     MidiStream* song_midi;
+    char* song_name;
     int song_audio_ID;
+    // bool ended = false;
 public:
     Stats stats;
-    virtual bool init(MidiReader& instrument_midi, MidiSequencer& song_midi, int song_audio_ID);
+    virtual bool init(MidiReader& instrument_midi, MidiSequencer& song_midi, char* song_name);
     void start();
     void pause();
     bool completed();
     void update(float time);
     void draw(float time);
-}
+};
 
 #endif

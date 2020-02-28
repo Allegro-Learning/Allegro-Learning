@@ -157,3 +157,11 @@ if(LINUX OR WINDOWS)
     cocos_get_resource_path(APP_RES_DIR ${APP_NAME})
     cocos_copy_target_res(${APP_NAME} LINK_TO ${APP_RES_DIR} FOLDERS ${GAME_RES_FOLDER})
 endif()
+
+# thrid party libraries (added manually)
+
+set(OBOE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/oboe)
+
+add_subdirectory(${OBOE_DIR} ./oboe)
+
+include_directories(${OBOE_DIR}/include)

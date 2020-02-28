@@ -4,16 +4,17 @@
 
 #include "cocos2d.h"
 #include "SongLevel.h"
+#include <vector>
 
 class SongLibrary {
 private:
-    Vector<char*> songs;
+    std::vector<char*> songs;
 public:
     virtual bool init();
 
     Vector<SongLevel> getSongNames();
 
     SongLevel loadSong();
-}
+};
 
 #endif

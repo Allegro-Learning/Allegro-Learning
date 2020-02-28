@@ -2,7 +2,7 @@
 #ifndef __MIDIREADER_H__
 #define __MIDIREADER_H__
 
-#include <AMidi.h>
+#include "AudioEngine.h"
 #include "cocos2d.h"
 #include "MidiStream.h"
 
@@ -11,6 +11,7 @@ private:
     
 public:
     virtual bool init();
-}
+    Vector<char*> messages();
+};
 
 #endif
