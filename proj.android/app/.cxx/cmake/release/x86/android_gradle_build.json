@@ -30,7 +30,8 @@
 		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/android-specific/tremolo/CMakeLists.txt",
 		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/zlib/CMakeLists.txt",
 		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/unzip/CMakeLists.txt",
-		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/cocos/platform/android/CMakeLists.txt"
+		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/cocos/platform/android/CMakeLists.txt",
+		"C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/CMakeLists.txt"
 	],
 	"cFileExtensions" : [ "c" ],
 	"cleanCommands" : 
@@ -50,19 +51,19 @@
 			[
 				
 				{
-					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\oboe\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
 					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/Classes/AppDelegate.cpp",
 					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
 				},
 				
 				{
-					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\oboe\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
 					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/Classes/HelloWorldScene.cpp",
 					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
 				},
 				
 				{
-					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I..\\..\\..\\..\\..\\..\\Classes -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\audio\\include -I..\\..\\..\\..\\..\\..\\oboe\\include -I..\\..\\..\\..\\..\\..\\cocos2d -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos -I..\\..\\..\\..\\..\\..\\cocos2d\\extensions -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\editor-support -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\base -I..\\..\\..\\..\\..\\..\\cocos2d\\cocos\\platform\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\Box2D\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\chipmunk\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\freetype2\\include\\android\\freetype2 -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\recast\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\bullet\\include\\bullet -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\jpeg\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\openssl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\uv\\include -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\webp\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\websockets\\include\\android -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\tinyxml2\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxhash\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\xxtea\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\clipper\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\edtaa3func\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\ConvertUTF\\. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\poly2tri\\.. -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\md5\\.. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\curl\\include\\android -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\png\\include\\android -IC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\sources\\android\\cpufeatures -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\pvmp3dec\\src -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\android-specific\\tremolo\\. -isystem ..\\..\\..\\..\\..\\..\\cocos2d\\external\\zlib\\include -I..\\..\\..\\..\\..\\..\\cocos2d\\external\\unzip\\.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++11  -c ",
 					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/jni/hellocpp/main.cpp",
 					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
 				}
@@ -4166,6 +4167,312 @@
 			"artifactName" : "minicl",
 			"buildType" : "release",
 			"output" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/bullet/prebuilt/android/x86/libMiniCL.a",
+			"toolchain" : "2409049849"
+		},
+		"oboe-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "oboe",
+			"buildCommand" : "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86 --target oboe",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/aaudio/AAudioLoader.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/aaudio/AudioStreamAAudio.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/AudioSourceCaller.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/AudioStream.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/AudioStreamBuilder.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/DataConversionFlowGraph.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/FilterAudioStream.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/FixedBlockAdapter.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/FixedBlockReader.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/FixedBlockWriter.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/LatencyTuner.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/SourceFloatCaller.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/SourceI16Caller.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/Utilities.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/QuirksManager.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/fifo/FifoBuffer.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/fifo/FifoController.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/fifo/FifoControllerBase.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/fifo/FifoControllerIndirect.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/FlowGraphNode.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/ClipToRange.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/ManyToMultiConverter.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/MonoToMultiConverter.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/RampLinear.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SampleRateConverter.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SinkFloat.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SinkI16.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SinkI24.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SourceFloat.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SourceI16.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/SourceI24.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/IntegerRatio.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/LinearResampler.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/MultiChannelResampler.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/PolyphaseResampler.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/SincResampler.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/flowgraph/resampler/SincResamplerStereo.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/AudioInputStreamOpenSLES.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/AudioStreamBuffered.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/AudioStreamOpenSLES.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/EngineOpenSLES.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/OpenSLESUtilities.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/opensles/OutputMixerOpenSLES.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/StabilizedCallback.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/Trace.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				},
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot   -I..\\..\\..\\..\\..\\..\\oboe\\src -I..\\..\\..\\..\\..\\..\\oboe\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O2 -DNDEBUG  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -std=c++11  -c ",
+					"src" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe/src/common/Version.cpp",
+					"workingDirectory" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86"
+				}
+			],
+			"output" : "C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/oboe/liboboe.a",
 			"toolchain" : "2409049849"
 		}
 	},

@@ -5,6 +5,7 @@
       "sdkFolder": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
+      "ideBuildTargetAbi": "x86",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\build\\intermediates",
       "gradleModulePathName": ":AllegroLearning",

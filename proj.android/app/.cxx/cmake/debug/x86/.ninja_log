@@ -648,3 +648,5 @@
 568632	574214	0	../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so	c5979776afea0a86
 136	6923	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	b87bf618d29024f9
 6923	11234	0	../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so	c5979776afea0a86
+192	30552	0	CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o	a9f483680fa8bd28
+164	32562	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	5335f95e18561617

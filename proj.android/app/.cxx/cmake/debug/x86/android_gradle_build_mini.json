@@ -28,7 +28,8 @@
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\android-specific\\tremolo\\CMakeLists.txt",
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\CMakeLists.txt",
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\unzip\\CMakeLists.txt",
-    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\platform\\android\\CMakeLists.txt"
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\platform\\android\\CMakeLists.txt",
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\oboe\\CMakeLists.txt"
   ],
   "cleanCommands": [
     "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target clean"
@@ -169,6 +170,12 @@
       "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target external",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libexternal.a"
+    },
+    "oboe-Debug-x86": {
+      "artifactName": "oboe",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target oboe",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\oboe\\liboboe.a"
     },
     "ext_zlib-Debug-x86": {
       "artifactName": "ext_zlib",

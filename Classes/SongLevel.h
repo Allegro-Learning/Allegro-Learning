@@ -16,11 +16,17 @@ public:
         int bad;
         int missed;
     };
+    struct Note {
+        int pitch;
+        float start;
+        float duration;
+    };
 private:
     MidiStream* inst_midi;
     MidiStream* song_midi;
     char* song_name;
     int song_audio_ID;
+    cocos2d::Vector<cocos2d::Sprite> notes;
     // bool ended = false;
 public:
     Stats stats;

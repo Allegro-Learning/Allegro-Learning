@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/engine/cocos/core/cmake_install.cmake")
   include("C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/engine/cocos/platform/cmake_install.cmake")
+  include("C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/oboe/cmake_install.cmake")
 
 endif()
 

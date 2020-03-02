@@ -270,8 +270,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/bin/i686-linux-android-strip.exe
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=C:\Users\Jugbot\AppData\Local\Android\Sdk\ndk\21.0.6113669\build\cmake\android.toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -419,6 +419,15 @@ md5_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.and
 
 //Value Computed by CMake
 md5_SOURCE_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/md5
+
+//Value Computed by CMake
+oboe_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/oboe
+
+//Dependencies for the target
+oboe_LIB_DEPENDS:STATIC=general;log;general;OpenSLES;
+
+//Value Computed by CMake
+oboe_SOURCE_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe
 
 //Value Computed by CMake
 openssl_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/release/x86/engine/external/openssl
@@ -589,7 +598,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=30
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
