@@ -17,39 +17,7 @@
   },
   {
     "level": "INFO",
-    "message": "rebuilding JSON C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\android_gradle_build.json due to:"
-  },
-  {
-    "level": "INFO",
-    "message": "- a dependent build file changed"
-  },
-  {
-    "level": "INFO",
-    "message": "  - C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\CMakeLists.txt"
-  },
-  {
-    "level": "INFO",
-    "message": "keeping json folder \u0027C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\u0027 but regenerating project"
-  },
-  {
-    "level": "INFO",
-    "message": "executing cmake Executable : C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe\narguments : \n-HC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\n-BC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\n-DANDROID_ABI\u003dx86\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\build\\intermediates\\cmake\\release\\obj\\x86\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\n-DCMAKE_CXX_FLAGS\u003d-frtti -fexceptions -fsigned-char\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\ninja.exe\n-GAndroid Gradle - Ninja\n-DCMAKE_FIND_ROOT_PATH\u003d\n-DANDROID_STL\u003dc++_static\n-DANDROID_TOOLCHAIN\u003dclang\n-DANDROID_ARM_NEON\u003dTRUE\njvmArgs : \n\n"
-  },
-  {
-    "level": "INFO",
-    "message": "Executable : C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe\narguments : \n-HC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\n-BC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\n-DANDROID_ABI\u003dx86\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\build\\intermediates\\cmake\\release\\obj\\x86\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\n-DCMAKE_CXX_FLAGS\u003d-frtti -fexceptions -fsigned-char\n-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\ninja.exe\n-GAndroid Gradle - Ninja\n-DCMAKE_FIND_ROOT_PATH\u003d\n-DANDROID_STL\u003dc++_static\n-DANDROID_TOOLCHAIN\u003dclang\n-DANDROID_ARM_NEON\u003dTRUE\njvmArgs : \n\n"
-  },
-  {
-    "level": "INFO",
-    "message": "done executing cmake"
-  },
-  {
-    "level": "INFO",
-    "message": "write build output C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\build_output.txt"
-  },
-  {
-    "level": "INFO",
-    "message": "write command file C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\build_command.txt"
+    "message": "JSON \u0027C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\release\\x86\\android_gradle_build.json\u0027 was up-to-date"
   },
   {
     "level": "INFO",

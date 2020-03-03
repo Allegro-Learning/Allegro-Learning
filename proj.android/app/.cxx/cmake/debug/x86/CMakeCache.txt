@@ -421,6 +421,15 @@ md5_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.and
 md5_SOURCE_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/md5
 
 //Value Computed by CMake
+midifile_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86/midifile
+
+//Dependencies for target
+midifile_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+midifile_SOURCE_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/midifile
+
+//Value Computed by CMake
 oboe_BINARY_DIR:STATIC=C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86/oboe
 
 //Dependencies for the target
@@ -635,4 +644,10 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Have includes humdrum.h
+HAVE_HUMDRUM_H:INTERNAL=
+//Have includes sys/io.h
+HAVE_SYS_IO_H:INTERNAL=
+//Have include unistd.h
+HAVE_UNISTD_H:INTERNAL=1
 

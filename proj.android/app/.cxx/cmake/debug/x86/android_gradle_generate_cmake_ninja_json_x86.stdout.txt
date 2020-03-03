@@ -9,20 +9,12 @@
 -- COCOS_COMMAND_PATH:COCOS_COMMAND-NOTFOUND
 -- HOST_SYSTEM:Windows
 -- CMAKE_GENERATOR: Ninja
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file humdrum.h
+-- Looking for include file humdrum.h - not found
+-- Looking for include file sys/io.h
+-- Looking for include file sys/io.h - not found
 -- Configuring done
 -- Generating done
--- using toolchain file:C:\Users\Jugbot\AppData\Local\Android\Sdk\ndk\21.0.6113669\build\cmake\android.toolchain.cmake
--- PROJECT_NAME:AllegroLearning
--- PROJECT_SOURCE_DIR:C:/Users/Jugbot/Documents/GitHub/Allegro-Learning
--- COCOS2DX_ROOT_PATH:C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d
--- CMAKE_MODULE_PATH:C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/cmake/Modules/
--- PROJECT_BINARY_DIR:C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86
--- ENGINE_BINARY_PATH:C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86/engine
--- PYTHON_PATH:C:/Users/Jugbot/AppData/Local/Programs/Python/Python38/python.exe
--- COCOS_COMMAND_PATH:COCOS_COMMAND-NOTFOUND
--- HOST_SYSTEM:Windows
--- CMAKE_GENERATOR: Ninja
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86
 -- Build files have been written to: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86

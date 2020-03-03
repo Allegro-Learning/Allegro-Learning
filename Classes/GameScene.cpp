@@ -31,8 +31,3 @@ bool Game::onTouchBegan(Touch *touch, Event *event) {
 bool Game::onTouchEnd(Touch *touch, Event *event) {
 
 }
-
-
-Game::CREATE_FUNC(Game) {
-    
-}

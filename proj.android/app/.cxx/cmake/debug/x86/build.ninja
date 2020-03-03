@@ -29,16 +29,6 @@ ninja_required_version = 1.5
 
 include rules.ninja
 
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\proj.android\app\.cxx\cmake\debug\x86 && C:\Users\Jugbot\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-build install/strip: phony CMakeFiles/install/strip.util
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target MyGame
 
@@ -51,23 +41,55 @@ build CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: CXX_COMPILER__MyGame ../.
   DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
   DEP_FILE = CMakeFiles\MyGame.dir\Classes\AppDelegate.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
-  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../oboe/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
   IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\AppDelegate.cpp
+  OBJECT_DIR = CMakeFiles\MyGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
+build CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o: CXX_COMPILER__MyGame ../../../../../../Classes/GameScene.cpp || cmake_order_depends_target_MyGame
+  DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
+  DEP_FILE = CMakeFiles\MyGame.dir\Classes\GameScene.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\GameScene.cpp
+  OBJECT_DIR = CMakeFiles\MyGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
+build CMakeFiles/MyGame.dir/Classes/GameSettings.cpp.o: CXX_COMPILER__MyGame ../../../../../../Classes/GameSettings.cpp || cmake_order_depends_target_MyGame
+  DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
+  DEP_FILE = CMakeFiles\MyGame.dir\Classes\GameSettings.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\GameSettings.cpp
   OBJECT_DIR = CMakeFiles\MyGame.dir
   OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
 build CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o: CXX_COMPILER__MyGame ../../../../../../Classes/HelloWorldScene.cpp || cmake_order_depends_target_MyGame
   DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
   DEP_FILE = CMakeFiles\MyGame.dir\Classes\HelloWorldScene.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
-  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../oboe/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
   IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\HelloWorldScene.cpp
+  OBJECT_DIR = CMakeFiles\MyGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
+build CMakeFiles/MyGame.dir/Classes/MidiReader.cpp.o: CXX_COMPILER__MyGame ../../../../../../Classes/MidiReader.cpp || cmake_order_depends_target_MyGame
+  DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
+  DEP_FILE = CMakeFiles\MyGame.dir\Classes\MidiReader.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\MidiReader.cpp
+  OBJECT_DIR = CMakeFiles\MyGame.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
+build CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o: CXX_COMPILER__MyGame ../../../../../../Classes/SongLevel.cpp || cmake_order_depends_target_MyGame
+  DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
+  DEP_FILE = CMakeFiles\MyGame.dir\Classes\SongLevel.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp
   OBJECT_DIR = CMakeFiles\MyGame.dir
   OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\Classes
 build CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o: CXX_COMPILER__MyGame ../../../../jni/hellocpp/main.cpp || cmake_order_depends_target_MyGame
   DEFINES = -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API
   DEP_FILE = CMakeFiles\MyGame.dir\proj.android\app\jni\hellocpp\main.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
-  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../oboe/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
+  INCLUDES = -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/.
   IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\proj.android\app\jni\hellocpp\main.cpp
   OBJECT_DIR = CMakeFiles\MyGame.dir
   OBJECT_FILE_DIR = CMakeFiles\MyGame.dir\proj.android\app\jni\hellocpp
@@ -79,7 +101,7 @@ build CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o: CXX_COMPIL
 #############################################
 # Link the shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libMyGame.so
 
-build ../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so: CXX_SHARED_LIBRARY_LINKER__MyGame CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o | engine/cocos/platform/libcpp_android_spec.a lib/libcocos2d.a lib/libexternal.a ../../../../../../cocos2d/external/Box2D/prebuilt/android/x86/libbox2d.a ../../../../../../cocos2d/external/chipmunk/prebuilt/android/x86/libchipmunk.a ../../../../../../cocos2d/external/freetype2/prebuilt/android/x86/libfreetype.a lib/libext_recast.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletDynamics.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletCollision.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletMultiThreaded.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libMiniCL.a ../../../../../../cocos2d/external/jpeg/prebuilt/android/x86/libjpeg.a ../../../../../../cocos2d/external/webp/prebuilt/android/x86/libwebp.a ../../../../../../cocos2d/external/websockets/prebuilt/android/x86/libwebsockets.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libssl.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libcrypto.a ../../../../../../cocos2d/external/uv/prebuilt/android/x86/libuv_a.a lib/libext_tinyxml2.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libext_clipper.a lib/libext_edtaa3func.a lib/libext_convertUTF.a lib/libext_poly2tri.a lib/libext_md5.a ../../../../../../cocos2d/external/curl/prebuilt/android/x86/libcurl.a ../../../../../../cocos2d/external/png/prebuilt/android/x86/libpng.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libext_pvmp3dec.a lib/libext_tremolo.a ../../../../../../cocos2d/external/zlib/prebuilt/android/x86/libz.a lib/libext_unzip.a || engine/cocos/platform/libcpp_android_spec.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libcocos2d.a lib/libext_clipper.a lib/libext_convertUTF.a lib/libext_edtaa3func.a lib/libext_md5.a lib/libext_poly2tri.a lib/libext_pvmp3dec.a lib/libext_recast.a lib/libext_tinyxml2.a lib/libext_tremolo.a lib/libext_unzip.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libexternal.a
+build ../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so: CXX_SHARED_LIBRARY_LINKER__MyGame CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o CMakeFiles/MyGame.dir/Classes/GameSettings.cpp.o CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o CMakeFiles/MyGame.dir/Classes/MidiReader.cpp.o CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o | engine/cocos/platform/libcpp_android_spec.a lib/libcocos2d.a lib/libexternal.a ../../../../../../cocos2d/external/Box2D/prebuilt/android/x86/libbox2d.a ../../../../../../cocos2d/external/chipmunk/prebuilt/android/x86/libchipmunk.a ../../../../../../cocos2d/external/freetype2/prebuilt/android/x86/libfreetype.a lib/libext_recast.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletDynamics.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletCollision.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletMultiThreaded.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libMiniCL.a ../../../../../../cocos2d/external/jpeg/prebuilt/android/x86/libjpeg.a ../../../../../../cocos2d/external/webp/prebuilt/android/x86/libwebp.a ../../../../../../cocos2d/external/websockets/prebuilt/android/x86/libwebsockets.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libssl.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libcrypto.a ../../../../../../cocos2d/external/uv/prebuilt/android/x86/libuv_a.a lib/libext_tinyxml2.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libext_clipper.a lib/libext_edtaa3func.a lib/libext_convertUTF.a lib/libext_poly2tri.a lib/libext_md5.a ../../../../../../cocos2d/external/curl/prebuilt/android/x86/libcurl.a ../../../../../../cocos2d/external/png/prebuilt/android/x86/libpng.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libext_pvmp3dec.a lib/libext_tremolo.a ../../../../../../cocos2d/external/zlib/prebuilt/android/x86/libz.a lib/libext_unzip.a || engine/cocos/platform/libcpp_android_spec.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libcocos2d.a lib/libext_clipper.a lib/libext_convertUTF.a lib/libext_edtaa3func.a lib/libext_md5.a lib/libext_poly2tri.a lib/libext_pvmp3dec.a lib/libext_recast.a lib/libext_tinyxml2.a lib/libext_tremolo.a lib/libext_unzip.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libexternal.a
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -Wl,--whole-archive engine/cocos/platform/libcpp_android_spec.a -Wl,--no-whole-archive lib/libcocos2d.a lib/libexternal.a ../../../../../../cocos2d/external/Box2D/prebuilt/android/x86/libbox2d.a ../../../../../../cocos2d/external/chipmunk/prebuilt/android/x86/libchipmunk.a ../../../../../../cocos2d/external/freetype2/prebuilt/android/x86/libfreetype.a lib/libext_recast.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletDynamics.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletCollision.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libLinearMath.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libBulletMultiThreaded.a ../../../../../../cocos2d/external/bullet/prebuilt/android/x86/libMiniCL.a ../../../../../../cocos2d/external/jpeg/prebuilt/android/x86/libjpeg.a ../../../../../../cocos2d/external/webp/prebuilt/android/x86/libwebp.a ../../../../../../cocos2d/external/websockets/prebuilt/android/x86/libwebsockets.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libssl.a ../../../../../../cocos2d/external/openssl/prebuilt/android/x86/libcrypto.a ../../../../../../cocos2d/external/uv/prebuilt/android/x86/libuv_a.a lib/libext_tinyxml2.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libext_clipper.a lib/libext_edtaa3func.a lib/libext_convertUTF.a lib/libext_poly2tri.a lib/libext_md5.a ../../../../../../cocos2d/external/curl/prebuilt/android/x86/libcurl.a ../../../../../../cocos2d/external/png/prebuilt/android/x86/libpng.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a -ldl lib/libext_pvmp3dec.a lib/libext_tremolo.a ../../../../../../cocos2d/external/zlib/prebuilt/android/x86/libz.a lib/libext_unzip.a -lGLESv2 -lEGL -llog -landroid -lOpenSLES -latomic -lm
@@ -101,26 +123,6 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 #############################################
-# Utility command for install
-
-build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\proj.android\app\.cxx\cmake\debug\x86 && C:\Users\Jugbot\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-build install: phony CMakeFiles/install.util
-
-#############################################
-# Utility command for install/local
-
-build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\proj.android\app\.cxx\cmake\debug\x86 && C:\Users\Jugbot\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-build install/local: phony CMakeFiles/install/local.util
-
-#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -129,11 +131,6 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   pool = console
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-
-#############################################
-# Utility command for list_install_components
-
-build list_install_components: phony
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/CMakeLists.txt
@@ -5524,421 +5521,1134 @@ build engine/cocos/platform/libcpp_android_spec.a: CXX_STATIC_LIBRARY_LINKER__cp
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target oboe
-
-build oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/aaudio/AAudioLoader.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\aaudio\AAudioLoader.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\aaudio\AAudioLoader.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\aaudio
-build oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/aaudio/AudioStreamAAudio.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\aaudio\AudioStreamAAudio.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\aaudio\AudioStreamAAudio.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\aaudio
-build oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/AudioSourceCaller.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioSourceCaller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\AudioSourceCaller.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/AudioStream.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioStream.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\AudioStream.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/AudioStreamBuilder.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\AudioStreamBuilder.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\AudioStreamBuilder.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/DataConversionFlowGraph.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\DataConversionFlowGraph.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\DataConversionFlowGraph.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/FilterAudioStream.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FilterAudioStream.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\FilterAudioStream.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/FixedBlockAdapter.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockAdapter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\FixedBlockAdapter.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/FixedBlockReader.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockReader.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\FixedBlockReader.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/FixedBlockWriter.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\FixedBlockWriter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\FixedBlockWriter.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/LatencyTuner.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\LatencyTuner.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\LatencyTuner.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/SourceFloatCaller.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\SourceFloatCaller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\SourceFloatCaller.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/SourceI16Caller.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\SourceI16Caller.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\SourceI16Caller.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/Utilities.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Utilities.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\Utilities.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/QuirksManager.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\QuirksManager.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\QuirksManager.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/fifo/FifoBuffer.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoBuffer.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\fifo\FifoBuffer.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
-build oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/fifo/FifoController.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoController.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\fifo\FifoController.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
-build oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/fifo/FifoControllerBase.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoControllerBase.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\fifo\FifoControllerBase.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
-build oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/fifo/FifoControllerIndirect.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\fifo\FifoControllerIndirect.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\fifo\FifoControllerIndirect.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\fifo
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/FlowGraphNode.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\FlowGraphNode.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\FlowGraphNode.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/ClipToRange.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\ClipToRange.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\ClipToRange.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/ManyToMultiConverter.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\ManyToMultiConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\ManyToMultiConverter.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/MonoToMultiConverter.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\MonoToMultiConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\MonoToMultiConverter.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/RampLinear.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\RampLinear.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\RampLinear.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SampleRateConverter.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SampleRateConverter.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SampleRateConverter.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SinkFloat.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkFloat.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SinkFloat.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SinkI16.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkI16.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SinkI16.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SinkI24.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SinkI24.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SinkI24.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SourceFloat.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceFloat.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SourceFloat.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SourceI16.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceI16.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SourceI16.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/SourceI24.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\SourceI24.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\SourceI24.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/IntegerRatio.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\IntegerRatio.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\IntegerRatio.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/LinearResampler.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\LinearResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\LinearResampler.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/MultiChannelResampler.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\MultiChannelResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\MultiChannelResampler.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/PolyphaseResampler.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\PolyphaseResampler.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/PolyphaseResamplerMono.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResamplerMono.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\PolyphaseResamplerMono.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\PolyphaseResamplerStereo.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\PolyphaseResamplerStereo.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/SincResampler.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\SincResampler.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\SincResampler.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/flowgraph/resampler/SincResamplerStereo.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler\SincResamplerStereo.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\flowgraph\resampler\SincResamplerStereo.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\flowgraph\resampler
-build oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/AudioInputStreamOpenSLES.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioInputStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\AudioInputStreamOpenSLES.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/AudioOutputStreamOpenSLES.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioOutputStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\AudioOutputStreamOpenSLES.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/AudioStreamBuffered.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioStreamBuffered.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\AudioStreamBuffered.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/AudioStreamOpenSLES.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\AudioStreamOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\AudioStreamOpenSLES.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/EngineOpenSLES.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\EngineOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\EngineOpenSLES.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/OpenSLESUtilities.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\OpenSLESUtilities.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\OpenSLESUtilities.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/opensles/OutputMixerOpenSLES.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\opensles\OutputMixerOpenSLES.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\opensles\OutputMixerOpenSLES.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\opensles
-build oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/StabilizedCallback.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\StabilizedCallback.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\StabilizedCallback.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/Trace.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Trace.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\Trace.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-build oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o: CXX_COMPILER__oboe ../../../../../../oboe/src/common/Version.cpp
-  DEFINES = -DOBOE_ENABLE_LOGGING=1
-  DEP_FILE = oboe\CMakeFiles\oboe.dir\src\common\Version.cpp.o.d
-  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast -Werror -std=c++11
-  INCLUDES = -I../../../../../../oboe/src -I../../../../../../oboe/include
-  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\oboe\src\common\Version.cpp
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
-  OBJECT_FILE_DIR = oboe\CMakeFiles\oboe.dir\src\common
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target oboe
+# Object build statements for EXECUTABLE target midi2skini
 
 
 #############################################
-# Link the static library oboe\liboboe.a
+# Order-only phony target for midi2skini
 
-build oboe/liboboe.a: CXX_STATIC_LIBRARY_LINKER__oboe oboe/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o oboe/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o oboe/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o oboe/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockAdapter.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockReader.cpp.o oboe/CMakeFiles/oboe.dir/src/common/FixedBlockWriter.cpp.o oboe/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o oboe/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o oboe/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoController.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerBase.cpp.o oboe/CMakeFiles/oboe.dir/src/fifo/FifoControllerIndirect.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/FlowGraphNode.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/ClipToRange.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/ManyToMultiConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/MonoToMultiConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/RampLinear.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SampleRateConverter.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkFloat.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI16.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SinkI24.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceFloat.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI16.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/SourceI24.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/IntegerRatio.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/LinearResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/MultiChannelResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerMono.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/PolyphaseResamplerStereo.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResampler.cpp.o oboe/CMakeFiles/oboe.dir/src/flowgraph/resampler/SincResamplerStereo.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o oboe/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o oboe/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Trace.cpp.o oboe/CMakeFiles/oboe.dir/src/common/Version.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
-  OBJECT_DIR = oboe\CMakeFiles\oboe.dir
+build cmake_order_depends_target_midi2skini: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midi2skini.dir/tools/midi2skini.cpp.o: CXX_COMPILER__midi2skini ../../../../../../midifile/tools/midi2skini.cpp || cmake_order_depends_target_midi2skini
+  DEP_FILE = midifile\CMakeFiles\midi2skini.dir\tools\midi2skini.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midi2skini.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midi2skini.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midi2skini.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midi2skini
+
+
+#############################################
+# Link the executable midifile\midi2skini
+
+build midifile/midi2skini: CXX_EXECUTABLE_LINKER__midi2skini midifile/CMakeFiles/midi2skini.dir/tools/midi2skini.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midi2skini.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = oboe\liboboe.a
-  TARGET_PDB = oboe.a.dbg
+  TARGET_FILE = midifile\midi2skini
+  TARGET_PDB = midi2skini.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midi2melody
+
+
+#############################################
+# Order-only phony target for midi2melody
+
+build cmake_order_depends_target_midi2melody: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midi2melody.dir/tools/midi2melody.cpp.o: CXX_COMPILER__midi2melody ../../../../../../midifile/tools/midi2melody.cpp || cmake_order_depends_target_midi2melody
+  DEP_FILE = midifile\CMakeFiles\midi2melody.dir\tools\midi2melody.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midi2melody.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midi2melody.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midi2melody.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midi2melody
+
+
+#############################################
+# Link the executable midifile\midi2melody
+
+build midifile/midi2melody: CXX_EXECUTABLE_LINKER__midi2melody midifile/CMakeFiles/midi2melody.dir/tools/midi2melody.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midi2melody.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midi2melody
+  TARGET_PDB = midi2melody.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target createmidifile
+
+
+#############################################
+# Order-only phony target for createmidifile
+
+build cmake_order_depends_target_createmidifile: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/createmidifile.dir/tools/createmidifile.cpp.o: CXX_COMPILER__createmidifile ../../../../../../midifile/tools/createmidifile.cpp || cmake_order_depends_target_createmidifile
+  DEP_FILE = midifile\CMakeFiles\createmidifile.dir\tools\createmidifile.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\createmidifile.cpp
+  OBJECT_DIR = midifile\CMakeFiles\createmidifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\createmidifile.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target createmidifile
+
+
+#############################################
+# Link the executable midifile\createmidifile
+
+build midifile/createmidifile: CXX_EXECUTABLE_LINKER__createmidifile midifile/CMakeFiles/createmidifile.dir/tools/createmidifile.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\createmidifile.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\createmidifile
+  TARGET_PDB = createmidifile.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target durations
+
+
+#############################################
+# Order-only phony target for durations
+
+build cmake_order_depends_target_durations: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/durations.dir/tools/durations.cpp.o: CXX_COMPILER__durations ../../../../../../midifile/tools/durations.cpp || cmake_order_depends_target_durations
+  DEP_FILE = midifile\CMakeFiles\durations.dir\tools\durations.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\durations.cpp
+  OBJECT_DIR = midifile\CMakeFiles\durations.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\durations.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target durations
+
+
+#############################################
+# Link the executable midifile\durations
+
+build midifile/durations: CXX_EXECUTABLE_LINKER__durations midifile/CMakeFiles/durations.dir/tools/durations.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\durations.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\durations
+  TARGET_PDB = durations.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target 80off
+
+
+#############################################
+# Order-only phony target for 80off
+
+build cmake_order_depends_target_80off: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/80off.dir/tools/80off.cpp.o: CXX_COMPILER__80off ../../../../../../midifile/tools/80off.cpp || cmake_order_depends_target_80off
+  DEP_FILE = midifile\CMakeFiles\80off.dir\tools\80off.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\80off.cpp
+  OBJECT_DIR = midifile\CMakeFiles\80off.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\80off.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 80off
+
+
+#############################################
+# Link the executable midifile\80off
+
+build midifile/80off: CXX_EXECUTABLE_LINKER__80off midifile/CMakeFiles/80off.dir/tools/80off.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\80off.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\80off
+  TARGET_PDB = 80off.dbg
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target midifile
+
+build midifile/CMakeFiles/midifile.dir/src/Options.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/Options.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\Options.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\Options.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+build midifile/CMakeFiles/midifile.dir/src/Binasc.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/Binasc.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\Binasc.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\Binasc.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+build midifile/CMakeFiles/midifile.dir/src/MidiEvent.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/MidiEvent.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\MidiEvent.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\MidiEvent.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+build midifile/CMakeFiles/midifile.dir/src/MidiEventList.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/MidiEventList.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\MidiEventList.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\MidiEventList.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+build midifile/CMakeFiles/midifile.dir/src/MidiFile.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/MidiFile.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\MidiFile.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\MidiFile.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+build midifile/CMakeFiles/midifile.dir/src/MidiMessage.cpp.o: CXX_COMPILER__midifile ../../../../../../midifile/src/MidiMessage.cpp
+  DEP_FILE = midifile\CMakeFiles\midifile.dir\src\MidiMessage.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\src\MidiMessage.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midifile.dir\src
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target midifile
+
+
+#############################################
+# Link the static library midifile\libmidifile.a
+
+build midifile/libmidifile.a: CXX_STATIC_LIBRARY_LINKER__midifile midifile/CMakeFiles/midifile.dir/src/Options.cpp.o midifile/CMakeFiles/midifile.dir/src/Binasc.cpp.o midifile/CMakeFiles/midifile.dir/src/MidiEvent.cpp.o midifile/CMakeFiles/midifile.dir/src/MidiEventList.cpp.o midifile/CMakeFiles/midifile.dir/src/MidiFile.cpp.o midifile/CMakeFiles/midifile.dir/src/MidiMessage.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  OBJECT_DIR = midifile\CMakeFiles\midifile.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\libmidifile.a
+  TARGET_PDB = midifile.a.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target asciimidi
+
+
+#############################################
+# Order-only phony target for asciimidi
+
+build cmake_order_depends_target_asciimidi: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/asciimidi.dir/tools/asciimidi.cpp.o: CXX_COMPILER__asciimidi ../../../../../../midifile/tools/asciimidi.cpp || cmake_order_depends_target_asciimidi
+  DEP_FILE = midifile\CMakeFiles\asciimidi.dir\tools\asciimidi.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\asciimidi.cpp
+  OBJECT_DIR = midifile\CMakeFiles\asciimidi.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\asciimidi.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target asciimidi
+
+
+#############################################
+# Link the executable midifile\asciimidi
+
+build midifile/asciimidi: CXX_EXECUTABLE_LINKER__asciimidi midifile/CMakeFiles/asciimidi.dir/tools/asciimidi.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\asciimidi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\asciimidi
+  TARGET_PDB = asciimidi.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target perfid
+
+
+#############################################
+# Order-only phony target for perfid
+
+build cmake_order_depends_target_perfid: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/perfid.dir/tools/perfid.cpp.o: CXX_COMPILER__perfid ../../../../../../midifile/tools/perfid.cpp || cmake_order_depends_target_perfid
+  DEP_FILE = midifile\CMakeFiles\perfid.dir\tools\perfid.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\perfid.cpp
+  OBJECT_DIR = midifile\CMakeFiles\perfid.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\perfid.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target perfid
+
+
+#############################################
+# Link the executable midifile\perfid
+
+build midifile/perfid: CXX_EXECUTABLE_LINKER__perfid midifile/CMakeFiles/perfid.dir/tools/perfid.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\perfid.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\perfid
+  TARGET_PDB = perfid.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target binasc
+
+
+#############################################
+# Order-only phony target for binasc
+
+build cmake_order_depends_target_binasc: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/binasc.dir/tools/binasc.cpp.o: CXX_COMPILER__binasc ../../../../../../midifile/tools/binasc.cpp || cmake_order_depends_target_binasc
+  DEP_FILE = midifile\CMakeFiles\binasc.dir\tools\binasc.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\binasc.cpp
+  OBJECT_DIR = midifile\CMakeFiles\binasc.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\binasc.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target binasc
+
+
+#############################################
+# Link the executable midifile\binasc
+
+build midifile/binasc: CXX_EXECUTABLE_LINKER__binasc midifile/CMakeFiles/binasc.dir/tools/binasc.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\binasc.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\binasc
+  TARGET_PDB = binasc.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target createmidifile2
+
+
+#############################################
+# Order-only phony target for createmidifile2
+
+build cmake_order_depends_target_createmidifile2: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/createmidifile2.dir/tools/createmidifile2.cpp.o: CXX_COMPILER__createmidifile2 ../../../../../../midifile/tools/createmidifile2.cpp || cmake_order_depends_target_createmidifile2
+  DEP_FILE = midifile\CMakeFiles\createmidifile2.dir\tools\createmidifile2.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\createmidifile2.cpp
+  OBJECT_DIR = midifile\CMakeFiles\createmidifile2.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\createmidifile2.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target createmidifile2
+
+
+#############################################
+# Link the executable midifile\createmidifile2
+
+build midifile/createmidifile2: CXX_EXECUTABLE_LINKER__createmidifile2 midifile/CMakeFiles/createmidifile2.dir/tools/createmidifile2.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\createmidifile2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\createmidifile2
+  TARGET_PDB = createmidifile2.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target drumtab
+
+
+#############################################
+# Order-only phony target for drumtab
+
+build cmake_order_depends_target_drumtab: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/drumtab.dir/tools/drumtab.cpp.o: CXX_COMPILER__drumtab ../../../../../../midifile/tools/drumtab.cpp || cmake_order_depends_target_drumtab
+  DEP_FILE = midifile\CMakeFiles\drumtab.dir\tools\drumtab.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\drumtab.cpp
+  OBJECT_DIR = midifile\CMakeFiles\drumtab.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\drumtab.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target drumtab
+
+
+#############################################
+# Link the executable midifile\drumtab
+
+build midifile/drumtab: CXX_EXECUTABLE_LINKER__drumtab midifile/CMakeFiles/drumtab.dir/tools/drumtab.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\drumtab.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\drumtab
+  TARGET_PDB = drumtab.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target mid2mat
+
+
+#############################################
+# Order-only phony target for mid2mat
+
+build cmake_order_depends_target_mid2mat: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/mid2mat.dir/tools/mid2mat.cpp.o: CXX_COMPILER__mid2mat ../../../../../../midifile/tools/mid2mat.cpp || cmake_order_depends_target_mid2mat
+  DEP_FILE = midifile\CMakeFiles\mid2mat.dir\tools\mid2mat.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\mid2mat.cpp
+  OBJECT_DIR = midifile\CMakeFiles\mid2mat.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\mid2mat.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mid2mat
+
+
+#############################################
+# Link the executable midifile\mid2mat
+
+build midifile/mid2mat: CXX_EXECUTABLE_LINKER__mid2mat midifile/CMakeFiles/mid2mat.dir/tools/mid2mat.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\mid2mat.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\mid2mat
+  TARGET_PDB = mid2mat.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target mid2mtb
+
+
+#############################################
+# Order-only phony target for mid2mtb
+
+build cmake_order_depends_target_mid2mtb: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/mid2mtb.dir/tools/mid2mtb.cpp.o: CXX_COMPILER__mid2mtb ../../../../../../midifile/tools/mid2mtb.cpp || cmake_order_depends_target_mid2mtb
+  DEP_FILE = midifile\CMakeFiles\mid2mtb.dir\tools\mid2mtb.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\mid2mtb.cpp
+  OBJECT_DIR = midifile\CMakeFiles\mid2mtb.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\mid2mtb.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mid2mtb
+
+
+#############################################
+# Link the executable midifile\mid2mtb
+
+build midifile/mid2mtb: CXX_EXECUTABLE_LINKER__mid2mtb midifile/CMakeFiles/mid2mtb.dir/tools/mid2mtb.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\mid2mtb.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\mid2mtb
+  TARGET_PDB = mid2mtb.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target tohex
+
+
+#############################################
+# Order-only phony target for tohex
+
+build cmake_order_depends_target_tohex: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/tohex.dir/tools/tohex.cpp.o: CXX_COMPILER__tohex ../../../../../../midifile/tools/tohex.cpp || cmake_order_depends_target_tohex
+  DEP_FILE = midifile\CMakeFiles\tohex.dir\tools\tohex.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\tohex.cpp
+  OBJECT_DIR = midifile\CMakeFiles\tohex.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\tohex.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tohex
+
+
+#############################################
+# Link the executable midifile\tohex
+
+build midifile/tohex: CXX_EXECUTABLE_LINKER__tohex midifile/CMakeFiles/tohex.dir/tools/tohex.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\tohex.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\tohex
+  TARGET_PDB = tohex.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target tobinary
+
+
+#############################################
+# Order-only phony target for tobinary
+
+build cmake_order_depends_target_tobinary: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/tobinary.dir/tools/tobinary.cpp.o: CXX_COMPILER__tobinary ../../../../../../midifile/tools/tobinary.cpp || cmake_order_depends_target_tobinary
+  DEP_FILE = midifile\CMakeFiles\tobinary.dir\tools\tobinary.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\tobinary.cpp
+  OBJECT_DIR = midifile\CMakeFiles\tobinary.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\tobinary.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tobinary
+
+
+#############################################
+# Link the executable midifile\tobinary
+
+build midifile/tobinary: CXX_EXECUTABLE_LINKER__tobinary midifile/CMakeFiles/tobinary.dir/tools/tobinary.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\tobinary.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\tobinary
+  TARGET_PDB = tobinary.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target mid2svg
+
+
+#############################################
+# Order-only phony target for mid2svg
+
+build cmake_order_depends_target_mid2svg: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/mid2svg.dir/tools/mid2svg.cpp.o: CXX_COMPILER__mid2svg ../../../../../../midifile/tools/mid2svg.cpp || cmake_order_depends_target_mid2svg
+  DEP_FILE = midifile\CMakeFiles\mid2svg.dir\tools\mid2svg.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\mid2svg.cpp
+  OBJECT_DIR = midifile\CMakeFiles\mid2svg.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\mid2svg.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target mid2svg
+
+
+#############################################
+# Link the executable midifile\mid2svg
+
+build midifile/mid2svg: CXX_EXECUTABLE_LINKER__mid2svg midifile/CMakeFiles/mid2svg.dir/tools/mid2svg.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\mid2svg.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\mid2svg
+  TARGET_PDB = mid2svg.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midi2binasc
+
+
+#############################################
+# Order-only phony target for midi2binasc
+
+build cmake_order_depends_target_midi2binasc: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midi2binasc.dir/tools/midi2binasc.cpp.o: CXX_COMPILER__midi2binasc ../../../../../../midifile/tools/midi2binasc.cpp || cmake_order_depends_target_midi2binasc
+  DEP_FILE = midifile\CMakeFiles\midi2binasc.dir\tools\midi2binasc.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midi2binasc.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midi2binasc.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midi2binasc.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midi2binasc
+
+
+#############################################
+# Link the executable midifile\midi2binasc
+
+build midifile/midi2binasc: CXX_EXECUTABLE_LINKER__midi2binasc midifile/CMakeFiles/midi2binasc.dir/tools/midi2binasc.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midi2binasc.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midi2binasc
+  TARGET_PDB = midi2binasc.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midi2notes
+
+
+#############################################
+# Order-only phony target for midi2notes
+
+build cmake_order_depends_target_midi2notes: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midi2notes.dir/tools/midi2notes.cpp.o: CXX_COMPILER__midi2notes ../../../../../../midifile/tools/midi2notes.cpp || cmake_order_depends_target_midi2notes
+  DEP_FILE = midifile\CMakeFiles\midi2notes.dir\tools\midi2notes.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midi2notes.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midi2notes.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midi2notes.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midi2notes
+
+
+#############################################
+# Link the executable midifile\midi2notes
+
+build midifile/midi2notes: CXX_EXECUTABLE_LINKER__midi2notes midifile/CMakeFiles/midi2notes.dir/tools/midi2notes.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midi2notes.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midi2notes
+  TARGET_PDB = midi2notes.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midi2text
+
+
+#############################################
+# Order-only phony target for midi2text
+
+build cmake_order_depends_target_midi2text: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midi2text.dir/tools/midi2text.cpp.o: CXX_COMPILER__midi2text ../../../../../../midifile/tools/midi2text.cpp || cmake_order_depends_target_midi2text
+  DEP_FILE = midifile\CMakeFiles\midi2text.dir\tools\midi2text.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midi2text.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midi2text.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midi2text.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midi2text
+
+
+#############################################
+# Link the executable midifile\midi2text
+
+build midifile/midi2text: CXX_EXECUTABLE_LINKER__midi2text midifile/CMakeFiles/midi2text.dir/tools/midi2text.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midi2text.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midi2text
+  TARGET_PDB = midi2text.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midicat
+
+
+#############################################
+# Order-only phony target for midicat
+
+build cmake_order_depends_target_midicat: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midicat.dir/tools/midicat.cpp.o: CXX_COMPILER__midicat ../../../../../../midifile/tools/midicat.cpp || cmake_order_depends_target_midicat
+  DEP_FILE = midifile\CMakeFiles\midicat.dir\tools\midicat.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midicat.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midicat.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midicat.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midicat
+
+
+#############################################
+# Link the executable midifile\midicat
+
+build midifile/midicat: CXX_EXECUTABLE_LINKER__midicat midifile/CMakeFiles/midicat.dir/tools/midicat.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midicat.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midicat
+  TARGET_PDB = midicat.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target midimixup
+
+
+#############################################
+# Order-only phony target for midimixup
+
+build cmake_order_depends_target_midimixup: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/midimixup.dir/tools/midimixup.cpp.o: CXX_COMPILER__midimixup ../../../../../../midifile/tools/midimixup.cpp || cmake_order_depends_target_midimixup
+  DEP_FILE = midifile\CMakeFiles\midimixup.dir\tools\midimixup.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\midimixup.cpp
+  OBJECT_DIR = midifile\CMakeFiles\midimixup.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\midimixup.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target midimixup
+
+
+#############################################
+# Link the executable midifile\midimixup
+
+build midifile/midimixup: CXX_EXECUTABLE_LINKER__midimixup midifile/CMakeFiles/midimixup.dir/tools/midimixup.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\midimixup.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\midimixup
+  TARGET_PDB = midimixup.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target miditime
+
+
+#############################################
+# Order-only phony target for miditime
+
+build cmake_order_depends_target_miditime: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/miditime.dir/tools/miditime.cpp.o: CXX_COMPILER__miditime ../../../../../../midifile/tools/miditime.cpp || cmake_order_depends_target_miditime
+  DEP_FILE = midifile\CMakeFiles\miditime.dir\tools\miditime.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\miditime.cpp
+  OBJECT_DIR = midifile\CMakeFiles\miditime.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\miditime.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target miditime
+
+
+#############################################
+# Link the executable midifile\miditime
+
+build midifile/miditime: CXX_EXECUTABLE_LINKER__miditime midifile/CMakeFiles/miditime.dir/tools/miditime.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\miditime.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\miditime
+  TARGET_PDB = miditime.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target retick
+
+
+#############################################
+# Order-only phony target for retick
+
+build cmake_order_depends_target_retick: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/retick.dir/tools/retick.cpp.o: CXX_COMPILER__retick ../../../../../../midifile/tools/retick.cpp || cmake_order_depends_target_retick
+  DEP_FILE = midifile\CMakeFiles\retick.dir\tools\retick.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\retick.cpp
+  OBJECT_DIR = midifile\CMakeFiles\retick.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\retick.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target retick
+
+
+#############################################
+# Link the executable midifile\retick
+
+build midifile/retick: CXX_EXECUTABLE_LINKER__retick midifile/CMakeFiles/retick.dir/tools/retick.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\retick.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\retick
+  TARGET_PDB = retick.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target shutak
+
+
+#############################################
+# Order-only phony target for shutak
+
+build cmake_order_depends_target_shutak: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/shutak.dir/tools/shutak.cpp.o: CXX_COMPILER__shutak ../../../../../../midifile/tools/shutak.cpp || cmake_order_depends_target_shutak
+  DEP_FILE = midifile\CMakeFiles\shutak.dir\tools\shutak.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\shutak.cpp
+  OBJECT_DIR = midifile\CMakeFiles\shutak.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\shutak.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target shutak
+
+
+#############################################
+# Link the executable midifile\shutak
+
+build midifile/shutak: CXX_EXECUTABLE_LINKER__shutak midifile/CMakeFiles/shutak.dir/tools/shutak.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\shutak.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\shutak
+  TARGET_PDB = shutak.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target smfdur
+
+
+#############################################
+# Order-only phony target for smfdur
+
+build cmake_order_depends_target_smfdur: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/smfdur.dir/tools/smfdur.cpp.o: CXX_COMPILER__smfdur ../../../../../../midifile/tools/smfdur.cpp || cmake_order_depends_target_smfdur
+  DEP_FILE = midifile\CMakeFiles\smfdur.dir\tools\smfdur.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\smfdur.cpp
+  OBJECT_DIR = midifile\CMakeFiles\smfdur.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\smfdur.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target smfdur
+
+
+#############################################
+# Link the executable midifile\smfdur
+
+build midifile/smfdur: CXX_EXECUTABLE_LINKER__smfdur midifile/CMakeFiles/smfdur.dir/tools/smfdur.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\smfdur.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\smfdur
+  TARGET_PDB = smfdur.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target stretch
+
+
+#############################################
+# Order-only phony target for stretch
+
+build cmake_order_depends_target_stretch: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/stretch.dir/tools/stretch.cpp.o: CXX_COMPILER__stretch ../../../../../../midifile/tools/stretch.cpp || cmake_order_depends_target_stretch
+  DEP_FILE = midifile\CMakeFiles\stretch.dir\tools\stretch.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\stretch.cpp
+  OBJECT_DIR = midifile\CMakeFiles\stretch.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\stretch.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stretch
+
+
+#############################################
+# Link the executable midifile\stretch
+
+build midifile/stretch: CXX_EXECUTABLE_LINKER__stretch midifile/CMakeFiles/stretch.dir/tools/stretch.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\stretch.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\stretch
+  TARGET_PDB = stretch.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target toascii
+
+
+#############################################
+# Order-only phony target for toascii
+
+build cmake_order_depends_target_toascii: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/toascii.dir/tools/toascii.cpp.o: CXX_COMPILER__toascii ../../../../../../midifile/tools/toascii.cpp || cmake_order_depends_target_toascii
+  DEP_FILE = midifile\CMakeFiles\toascii.dir\tools\toascii.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\toascii.cpp
+  OBJECT_DIR = midifile\CMakeFiles\toascii.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\toascii.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target toascii
+
+
+#############################################
+# Link the executable midifile\toascii
+
+build midifile/toascii: CXX_EXECUTABLE_LINKER__toascii midifile/CMakeFiles/toascii.dir/tools/toascii.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\toascii.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\toascii
+  TARGET_PDB = toascii.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target sysextest
+
+
+#############################################
+# Order-only phony target for sysextest
+
+build cmake_order_depends_target_sysextest: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/sysextest.dir/tools/sysextest.cpp.o: CXX_COMPILER__sysextest ../../../../../../midifile/tools/sysextest.cpp || cmake_order_depends_target_sysextest
+  DEP_FILE = midifile\CMakeFiles\sysextest.dir\tools\sysextest.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\sysextest.cpp
+  OBJECT_DIR = midifile\CMakeFiles\sysextest.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\sysextest.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sysextest
+
+
+#############################################
+# Link the executable midifile\sysextest
+
+build midifile/sysextest: CXX_EXECUTABLE_LINKER__sysextest midifile/CMakeFiles/sysextest.dir/tools/sysextest.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\sysextest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\sysextest
+  TARGET_PDB = sysextest.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target text2midi
+
+
+#############################################
+# Order-only phony target for text2midi
+
+build cmake_order_depends_target_text2midi: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/text2midi.dir/tools/text2midi.cpp.o: CXX_COMPILER__text2midi ../../../../../../midifile/tools/text2midi.cpp || cmake_order_depends_target_text2midi
+  DEP_FILE = midifile\CMakeFiles\text2midi.dir\tools\text2midi.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\text2midi.cpp
+  OBJECT_DIR = midifile\CMakeFiles\text2midi.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\text2midi.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target text2midi
+
+
+#############################################
+# Link the executable midifile\text2midi
+
+build midifile/text2midi: CXX_EXECUTABLE_LINKER__text2midi midifile/CMakeFiles/text2midi.dir/tools/text2midi.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\text2midi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\text2midi
+  TARGET_PDB = text2midi.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target textmidi
+
+
+#############################################
+# Order-only phony target for textmidi
+
+build cmake_order_depends_target_textmidi: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/textmidi.dir/tools/textmidi.cpp.o: CXX_COMPILER__textmidi ../../../../../../midifile/tools/textmidi.cpp || cmake_order_depends_target_textmidi
+  DEP_FILE = midifile\CMakeFiles\textmidi.dir\tools\textmidi.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\textmidi.cpp
+  OBJECT_DIR = midifile\CMakeFiles\textmidi.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\textmidi.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target textmidi
+
+
+#############################################
+# Link the executable midifile\textmidi
+
+build midifile/textmidi: CXX_EXECUTABLE_LINKER__textmidi midifile/CMakeFiles/textmidi.dir/tools/textmidi.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\textmidi.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\textmidi
+  TARGET_PDB = textmidi.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target tobin
+
+
+#############################################
+# Order-only phony target for tobin
+
+build cmake_order_depends_target_tobin: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/tobin.dir/tools/tobin.cpp.o: CXX_COMPILER__tobin ../../../../../../midifile/tools/tobin.cpp || cmake_order_depends_target_tobin
+  DEP_FILE = midifile\CMakeFiles\tobin.dir\tools\tobin.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\tobin.cpp
+  OBJECT_DIR = midifile\CMakeFiles\tobin.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\tobin.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tobin
+
+
+#############################################
+# Link the executable midifile\tobin
+
+build midifile/tobin: CXX_EXECUTABLE_LINKER__tobin midifile/CMakeFiles/tobin.dir/tools/tobin.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\tobin.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\tobin
+  TARGET_PDB = tobin.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target todec
+
+
+#############################################
+# Order-only phony target for todec
+
+build cmake_order_depends_target_todec: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/todec.dir/tools/todec.cpp.o: CXX_COMPILER__todec ../../../../../../midifile/tools/todec.cpp || cmake_order_depends_target_todec
+  DEP_FILE = midifile\CMakeFiles\todec.dir\tools\todec.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\todec.cpp
+  OBJECT_DIR = midifile\CMakeFiles\todec.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\todec.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target todec
+
+
+#############################################
+# Link the executable midifile\todec
+
+build midifile/todec: CXX_EXECUTABLE_LINKER__todec midifile/CMakeFiles/todec.dir/tools/todec.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\todec.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\todec
+  TARGET_PDB = todec.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target type0
+
+
+#############################################
+# Order-only phony target for type0
+
+build cmake_order_depends_target_type0: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/type0.dir/tools/type0.cpp.o: CXX_COMPILER__type0 ../../../../../../midifile/tools/type0.cpp || cmake_order_depends_target_type0
+  DEP_FILE = midifile\CMakeFiles\type0.dir\tools\type0.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\type0.cpp
+  OBJECT_DIR = midifile\CMakeFiles\type0.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\type0.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target type0
+
+
+#############################################
+# Link the executable midifile\type0
+
+build midifile/type0: CXX_EXECUTABLE_LINKER__type0 midifile/CMakeFiles/type0.dir/tools/type0.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\type0.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\type0
+  TARGET_PDB = type0.dbg
+# =============================================================================
+# Object build statements for EXECUTABLE target vlv
+
+
+#############################################
+# Order-only phony target for vlv
+
+build cmake_order_depends_target_vlv: phony || midifile/libmidifile.a
+build midifile/CMakeFiles/vlv.dir/tools/vlv.cpp.o: CXX_COMPILER__vlv ../../../../../../midifile/tools/vlv.cpp || cmake_order_depends_target_vlv
+  DEP_FILE = midifile\CMakeFiles\vlv.dir\tools\vlv.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIE   -std=c++11
+  INCLUDES = -I../../../../../../midifile/include
+  IN_ABS = C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\midifile\tools\vlv.cpp
+  OBJECT_DIR = midifile\CMakeFiles\vlv.dir
+  OBJECT_FILE_DIR = midifile\CMakeFiles\vlv.dir\tools
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vlv
+
+
+#############################################
+# Link the executable midifile\vlv
+
+build midifile/vlv: CXX_EXECUTABLE_LINKER__vlv midifile/CMakeFiles/vlv.dir/tools/vlv.cpp.o | midifile/libmidifile.a || midifile/libmidifile.a
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections
+  LINK_LIBRARIES = midifile/libmidifile.a -latomic -lm
+  OBJECT_DIR = midifile\CMakeFiles\vlv.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = midifile\vlv
+  TARGET_PDB = vlv.dbg
 # =============================================================================
 # Target aliases.
 
+build 80off: phony midifile/80off
 build MyGame: phony ../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so
+build asciimidi: phony midifile/asciimidi
+build binasc: phony midifile/binasc
 build cocos2d: phony lib/libcocos2d.a
 build cpp_android_spec: phony engine/cocos/platform/libcpp_android_spec.a
+build createmidifile: phony midifile/createmidifile
+build createmidifile2: phony midifile/createmidifile2
+build drumtab: phony midifile/drumtab
+build durations: phony midifile/durations
 build ext_clipper: phony lib/libext_clipper.a
 build ext_convertUTF: phony lib/libext_convertUTF.a
 build ext_cpufeatures: phony engine/external/android-specific/cpufeatures/libext_cpufeatures.a
@@ -5970,8 +6680,34 @@ build libext_unzip.a: phony lib/libext_unzip.a
 build libext_xxhash.a: phony lib/libext_xxhash.a
 build libext_xxtea.a: phony lib/libext_xxtea.a
 build libexternal.a: phony lib/libexternal.a
-build liboboe.a: phony oboe/liboboe.a
-build oboe: phony oboe/liboboe.a
+build libmidifile.a: phony midifile/libmidifile.a
+build mid2mat: phony midifile/mid2mat
+build mid2mtb: phony midifile/mid2mtb
+build mid2svg: phony midifile/mid2svg
+build midi2binasc: phony midifile/midi2binasc
+build midi2melody: phony midifile/midi2melody
+build midi2notes: phony midifile/midi2notes
+build midi2skini: phony midifile/midi2skini
+build midi2text: phony midifile/midi2text
+build midicat: phony midifile/midicat
+build midifile: phony midifile/libmidifile.a
+build midimixup: phony midifile/midimixup
+build miditime: phony midifile/miditime
+build perfid: phony midifile/perfid
+build retick: phony midifile/retick
+build shutak: phony midifile/shutak
+build smfdur: phony midifile/smfdur
+build stretch: phony midifile/stretch
+build sysextest: phony midifile/sysextest
+build text2midi: phony midifile/text2midi
+build textmidi: phony midifile/textmidi
+build toascii: phony midifile/toascii
+build tobin: phony midifile/tobin
+build tobinary: phony midifile/tobinary
+build todec: phony midifile/todec
+build tohex: phony midifile/tohex
+build type0: phony midifile/type0
+build vlv: phony midifile/vlv
 # =============================================================================
 # Folder targets.
 
@@ -6147,9 +6883,9 @@ build  cocos2d/external/zlib/all: phony
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/oboe
+# Folder: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/midifile
 
-build  oboe/all: phony oboe
+build  midifile/all: phony midi2skini midi2melody createmidifile durations 80off midifile asciimidi perfid binasc createmidifile2 drumtab mid2mat mid2mtb tohex tobinary mid2svg midi2binasc midi2notes midi2text midicat midimixup miditime retick shutak smfdur stretch toascii sysextest text2midi textmidi tobin todec type0 vlv
 # =============================================================================
 # Built-in targets
 
@@ -6157,7 +6893,7 @@ build  oboe/all: phony oboe
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so lib/libcocos2d.a lib/libexternal.a lib/libext_recast.a lib/libext_tinyxml2.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libext_clipper.a lib/libext_edtaa3func.a lib/libext_convertUTF.a lib/libext_poly2tri.a lib/libext_md5.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libext_pvmp3dec.a lib/libext_tremolo.a lib/libext_unzip.a engine/cocos/platform/libcpp_android_spec.a oboe/liboboe.a
+build all: phony ../../../../build/intermediates/cmake/debug/obj/x86/libMyGame.so lib/libcocos2d.a lib/libexternal.a lib/libext_recast.a lib/libext_tinyxml2.a lib/libext_xxhash.a lib/libext_xxtea.a lib/libext_clipper.a lib/libext_edtaa3func.a lib/libext_convertUTF.a lib/libext_poly2tri.a lib/libext_md5.a engine/external/android-specific/cpufeatures/libext_cpufeatures.a lib/libext_pvmp3dec.a lib/libext_tremolo.a lib/libext_unzip.a engine/cocos/platform/libcpp_android_spec.a midifile/midi2skini midifile/midi2melody midifile/createmidifile midifile/durations midifile/80off midifile/libmidifile.a midifile/asciimidi midifile/perfid midifile/binasc midifile/createmidifile2 midifile/drumtab midifile/mid2mat midifile/mid2mtb midifile/tohex midifile/tobinary midifile/mid2svg midifile/midi2binasc midifile/midi2notes midifile/midi2text midifile/midicat midifile/midimixup midifile/miditime midifile/retick midifile/shutak midifile/smfdur midifile/stretch midifile/toascii midifile/sysextest midifile/text2midi midifile/textmidi midifile/tobin midifile/todec midifile/type0 midifile/vlv
 
 #############################################
 # Make the all target the default.
@@ -6167,13 +6903,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../../../CMakeLists.txt ../../../../../../cocos2d/cmake/Modules/CocosBuildHelpers.cmake ../../../../../../cocos2d/cmake/Modules/CocosBuildSet.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDefine.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDepend.cmake ../../../../../../cocos2d/cocos/2d/CMakeLists.txt ../../../../../../cocos2d/cocos/3d/CMakeLists.txt ../../../../../../cocos2d/cocos/CMakeLists.txt ../../../../../../cocos2d/cocos/audio/CMakeLists.txt ../../../../../../cocos2d/cocos/base/CMakeLists.txt ../../../../../../cocos2d/cocos/editor-support/cocostudio/CMakeLists.txt ../../../../../../cocos2d/cocos/math/CMakeLists.txt ../../../../../../cocos2d/cocos/navmesh/CMakeLists.txt ../../../../../../cocos2d/cocos/network/CMakeLists.txt ../../../../../../cocos2d/cocos/physics3d/CMakeLists.txt ../../../../../../cocos2d/cocos/physics/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/android/CMakeLists.txt ../../../../../../cocos2d/cocos/renderer/CMakeLists.txt ../../../../../../cocos2d/cocos/ui/CMakeLists.txt ../../../../../../cocos2d/extensions/CMakeLists.txt ../../../../../../cocos2d/external/Box2D/CMakeLists.txt ../../../../../../cocos2d/external/CMakeLists.txt ../../../../../../cocos2d/external/ConvertUTF/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/cpufeatures/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/pvmp3dec/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/tremolo/CMakeLists.txt ../../../../../../cocos2d/external/bullet/CMakeLists.txt ../../../../../../cocos2d/external/chipmunk/CMakeLists.txt ../../../../../../cocos2d/external/clipper/CMakeLists.txt ../../../../../../cocos2d/external/cmake/CocosExternalConfig.cmake ../../../../../../cocos2d/external/curl/CMakeLists.txt ../../../../../../cocos2d/external/edtaa3func/CMakeLists.txt ../../../../../../cocos2d/external/freetype2/CMakeLists.txt ../../../../../../cocos2d/external/jpeg/CMakeLists.txt ../../../../../../cocos2d/external/md5/CMakeLists.txt ../../../../../../cocos2d/external/openssl/CMakeLists.txt ../../../../../../cocos2d/external/png/CMakeLists.txt ../../../../../../cocos2d/external/poly2tri/CMakeLists.txt ../../../../../../cocos2d/external/recast/CMakeLists.txt ../../../../../../cocos2d/external/tinyxml2/CMakeLists.txt ../../../../../../cocos2d/external/unzip/CMakeLists.txt ../../../../../../cocos2d/external/uv/CMakeLists.txt ../../../../../../cocos2d/external/webp/CMakeLists.txt ../../../../../../cocos2d/external/websockets/CMakeLists.txt ../../../../../../cocos2d/external/xxhash/CMakeLists.txt ../../../../../../cocos2d/external/xxtea/CMakeLists.txt ../../../../../../cocos2d/external/zlib/CMakeLists.txt ../../../../../../oboe/CMakeLists.txt C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseArguments.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../../../../../../CMakeLists.txt ../../../../../../cocos2d/cmake/Modules/CocosBuildHelpers.cmake ../../../../../../cocos2d/cmake/Modules/CocosBuildSet.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDefine.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDepend.cmake ../../../../../../cocos2d/cocos/2d/CMakeLists.txt ../../../../../../cocos2d/cocos/3d/CMakeLists.txt ../../../../../../cocos2d/cocos/CMakeLists.txt ../../../../../../cocos2d/cocos/audio/CMakeLists.txt ../../../../../../cocos2d/cocos/base/CMakeLists.txt ../../../../../../cocos2d/cocos/editor-support/cocostudio/CMakeLists.txt ../../../../../../cocos2d/cocos/math/CMakeLists.txt ../../../../../../cocos2d/cocos/navmesh/CMakeLists.txt ../../../../../../cocos2d/cocos/network/CMakeLists.txt ../../../../../../cocos2d/cocos/physics3d/CMakeLists.txt ../../../../../../cocos2d/cocos/physics/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/android/CMakeLists.txt ../../../../../../cocos2d/cocos/renderer/CMakeLists.txt ../../../../../../cocos2d/cocos/ui/CMakeLists.txt ../../../../../../cocos2d/extensions/CMakeLists.txt ../../../../../../cocos2d/external/Box2D/CMakeLists.txt ../../../../../../cocos2d/external/CMakeLists.txt ../../../../../../cocos2d/external/ConvertUTF/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/cpufeatures/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/pvmp3dec/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/tremolo/CMakeLists.txt ../../../../../../cocos2d/external/bullet/CMakeLists.txt ../../../../../../cocos2d/external/chipmunk/CMakeLists.txt ../../../../../../cocos2d/external/clipper/CMakeLists.txt ../../../../../../cocos2d/external/cmake/CocosExternalConfig.cmake ../../../../../../cocos2d/external/curl/CMakeLists.txt ../../../../../../cocos2d/external/edtaa3func/CMakeLists.txt ../../../../../../cocos2d/external/freetype2/CMakeLists.txt ../../../../../../cocos2d/external/jpeg/CMakeLists.txt ../../../../../../cocos2d/external/md5/CMakeLists.txt ../../../../../../cocos2d/external/openssl/CMakeLists.txt ../../../../../../cocos2d/external/png/CMakeLists.txt ../../../../../../cocos2d/external/poly2tri/CMakeLists.txt ../../../../../../cocos2d/external/recast/CMakeLists.txt ../../../../../../cocos2d/external/tinyxml2/CMakeLists.txt ../../../../../../cocos2d/external/unzip/CMakeLists.txt ../../../../../../cocos2d/external/uv/CMakeLists.txt ../../../../../../cocos2d/external/webp/CMakeLists.txt ../../../../../../cocos2d/external/websockets/CMakeLists.txt ../../../../../../cocos2d/external/xxhash/CMakeLists.txt ../../../../../../cocos2d/external/xxtea/CMakeLists.txt ../../../../../../cocos2d/external/zlib/CMakeLists.txt ../../../../../../midifile/CMakeLists.txt C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeConfigurableFile.in C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseArguments.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CheckIncludeFiles.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../../../CMakeLists.txt ../../../../../../cocos2d/cmake/Modules/CocosBuildHelpers.cmake ../../../../../../cocos2d/cmake/Modules/CocosBuildSet.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDefine.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDepend.cmake ../../../../../../cocos2d/cocos/2d/CMakeLists.txt ../../../../../../cocos2d/cocos/3d/CMakeLists.txt ../../../../../../cocos2d/cocos/CMakeLists.txt ../../../../../../cocos2d/cocos/audio/CMakeLists.txt ../../../../../../cocos2d/cocos/base/CMakeLists.txt ../../../../../../cocos2d/cocos/editor-support/cocostudio/CMakeLists.txt ../../../../../../cocos2d/cocos/math/CMakeLists.txt ../../../../../../cocos2d/cocos/navmesh/CMakeLists.txt ../../../../../../cocos2d/cocos/network/CMakeLists.txt ../../../../../../cocos2d/cocos/physics3d/CMakeLists.txt ../../../../../../cocos2d/cocos/physics/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/android/CMakeLists.txt ../../../../../../cocos2d/cocos/renderer/CMakeLists.txt ../../../../../../cocos2d/cocos/ui/CMakeLists.txt ../../../../../../cocos2d/extensions/CMakeLists.txt ../../../../../../cocos2d/external/Box2D/CMakeLists.txt ../../../../../../cocos2d/external/CMakeLists.txt ../../../../../../cocos2d/external/ConvertUTF/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/cpufeatures/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/pvmp3dec/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/tremolo/CMakeLists.txt ../../../../../../cocos2d/external/bullet/CMakeLists.txt ../../../../../../cocos2d/external/chipmunk/CMakeLists.txt ../../../../../../cocos2d/external/clipper/CMakeLists.txt ../../../../../../cocos2d/external/cmake/CocosExternalConfig.cmake ../../../../../../cocos2d/external/curl/CMakeLists.txt ../../../../../../cocos2d/external/edtaa3func/CMakeLists.txt ../../../../../../cocos2d/external/freetype2/CMakeLists.txt ../../../../../../cocos2d/external/jpeg/CMakeLists.txt ../../../../../../cocos2d/external/md5/CMakeLists.txt ../../../../../../cocos2d/external/openssl/CMakeLists.txt ../../../../../../cocos2d/external/png/CMakeLists.txt ../../../../../../cocos2d/external/poly2tri/CMakeLists.txt ../../../../../../cocos2d/external/recast/CMakeLists.txt ../../../../../../cocos2d/external/tinyxml2/CMakeLists.txt ../../../../../../cocos2d/external/unzip/CMakeLists.txt ../../../../../../cocos2d/external/uv/CMakeLists.txt ../../../../../../cocos2d/external/webp/CMakeLists.txt ../../../../../../cocos2d/external/websockets/CMakeLists.txt ../../../../../../cocos2d/external/xxhash/CMakeLists.txt ../../../../../../cocos2d/external/xxtea/CMakeLists.txt ../../../../../../cocos2d/external/zlib/CMakeLists.txt ../../../../../../oboe/CMakeLists.txt C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseArguments.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake: phony
+build ../../../../../../CMakeLists.txt ../../../../../../cocos2d/cmake/Modules/CocosBuildHelpers.cmake ../../../../../../cocos2d/cmake/Modules/CocosBuildSet.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDefine.cmake ../../../../../../cocos2d/cmake/Modules/CocosConfigDepend.cmake ../../../../../../cocos2d/cocos/2d/CMakeLists.txt ../../../../../../cocos2d/cocos/3d/CMakeLists.txt ../../../../../../cocos2d/cocos/CMakeLists.txt ../../../../../../cocos2d/cocos/audio/CMakeLists.txt ../../../../../../cocos2d/cocos/base/CMakeLists.txt ../../../../../../cocos2d/cocos/editor-support/cocostudio/CMakeLists.txt ../../../../../../cocos2d/cocos/math/CMakeLists.txt ../../../../../../cocos2d/cocos/navmesh/CMakeLists.txt ../../../../../../cocos2d/cocos/network/CMakeLists.txt ../../../../../../cocos2d/cocos/physics3d/CMakeLists.txt ../../../../../../cocos2d/cocos/physics/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/CMakeLists.txt ../../../../../../cocos2d/cocos/platform/android/CMakeLists.txt ../../../../../../cocos2d/cocos/renderer/CMakeLists.txt ../../../../../../cocos2d/cocos/ui/CMakeLists.txt ../../../../../../cocos2d/extensions/CMakeLists.txt ../../../../../../cocos2d/external/Box2D/CMakeLists.txt ../../../../../../cocos2d/external/CMakeLists.txt ../../../../../../cocos2d/external/ConvertUTF/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/cpufeatures/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/pvmp3dec/CMakeLists.txt ../../../../../../cocos2d/external/android-specific/tremolo/CMakeLists.txt ../../../../../../cocos2d/external/bullet/CMakeLists.txt ../../../../../../cocos2d/external/chipmunk/CMakeLists.txt ../../../../../../cocos2d/external/clipper/CMakeLists.txt ../../../../../../cocos2d/external/cmake/CocosExternalConfig.cmake ../../../../../../cocos2d/external/curl/CMakeLists.txt ../../../../../../cocos2d/external/edtaa3func/CMakeLists.txt ../../../../../../cocos2d/external/freetype2/CMakeLists.txt ../../../../../../cocos2d/external/jpeg/CMakeLists.txt ../../../../../../cocos2d/external/md5/CMakeLists.txt ../../../../../../cocos2d/external/openssl/CMakeLists.txt ../../../../../../cocos2d/external/png/CMakeLists.txt ../../../../../../cocos2d/external/poly2tri/CMakeLists.txt ../../../../../../cocos2d/external/recast/CMakeLists.txt ../../../../../../cocos2d/external/tinyxml2/CMakeLists.txt ../../../../../../cocos2d/external/unzip/CMakeLists.txt ../../../../../../cocos2d/external/uv/CMakeLists.txt ../../../../../../cocos2d/external/webp/CMakeLists.txt ../../../../../../cocos2d/external/websockets/CMakeLists.txt ../../../../../../cocos2d/external/xxhash/CMakeLists.txt ../../../../../../cocos2d/external/xxtea/CMakeLists.txt ../../../../../../cocos2d/external/zlib/CMakeLists.txt ../../../../../../midifile/CMakeLists.txt C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCXXInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeConfigurableFile.in C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeGenericSystem.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeParseArguments.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CheckIncludeFiles.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-C.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang-CXX.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/Clang.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Compiler/GNU.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Android.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/Linux.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/Platform/UnixPaths.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake C$:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake CMakeCache.txt CMakeFiles/3.6.0-rc2/CMakeCCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeCXXCompiler.cmake CMakeFiles/3.6.0-rc2/CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.

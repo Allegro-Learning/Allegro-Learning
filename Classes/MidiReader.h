@@ -11,7 +11,7 @@ private:
     
 public:
     virtual bool init();
-    Vector<char*> messages();
+    std::vector<char*> messages();
 };
 
 #endif

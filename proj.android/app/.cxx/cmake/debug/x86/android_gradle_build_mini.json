@@ -29,7 +29,7 @@
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\CMakeLists.txt",
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\unzip\\CMakeLists.txt",
     "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\cocos\\platform\\android\\CMakeLists.txt",
-    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\oboe\\CMakeLists.txt"
+    "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\midifile\\CMakeLists.txt"
   ],
   "cleanCommands": [
     "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target clean"
@@ -46,10 +46,34 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libMiniCL.a"
     },
+    "stretch-Debug-x86": {
+      "artifactName": "stretch",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target stretch",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\stretch"
+    },
     "ext_ssl-Debug-x86": {
       "artifactName": "ext_ssl",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libssl.a"
+    },
+    "midi2skini-Debug-x86": {
+      "artifactName": "midi2skini",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midi2skini",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midi2skini"
+    },
+    "type0-Debug-x86": {
+      "artifactName": "type0",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target type0",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\type0"
+    },
+    "drumtab-Debug-x86": {
+      "artifactName": "drumtab",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target drumtab",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\drumtab"
     },
     "bulletdynamics-Debug-x86": {
       "artifactName": "bulletdynamics",
@@ -61,16 +85,17 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libBulletCollision.a"
     },
-    "ext_webp-Debug-x86": {
-      "artifactName": "ext_webp",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\prebuilt\\android\\x86\\libwebp.a"
-    },
     "cocos2d-Debug-x86": {
       "artifactName": "cocos2d",
       "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target cocos2d",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libcocos2d.a"
+    },
+    "durations-Debug-x86": {
+      "artifactName": "durations",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target durations",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\durations"
     },
     "bulletmultithreaded-Debug-x86": {
       "artifactName": "bulletmultithreaded",
@@ -87,10 +112,11 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\uv\\prebuilt\\android\\x86\\libuv_a.a"
     },
-    "ext_png-Debug-x86": {
-      "artifactName": "ext_png",
+    "perfid-Debug-x86": {
+      "artifactName": "perfid",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target perfid",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\prebuilt\\android\\x86\\libpng.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\perfid"
     },
     "ext_convertUTF-Debug-x86": {
       "artifactName": "ext_convertUTF",
@@ -98,23 +124,23 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_convertUTF.a"
     },
-    "ext_cpufeatures-Debug-x86": {
-      "artifactName": "ext_cpufeatures",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_cpufeatures",
+    "midi2binasc-Debug-x86": {
+      "artifactName": "midi2binasc",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midi2binasc",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midi2binasc"
     },
-    "ext_xxtea-Debug-x86": {
-      "artifactName": "ext_xxtea",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_xxtea",
+    "retick-Debug-x86": {
+      "artifactName": "retick",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target retick",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxtea.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\retick"
     },
-    "ext_pvmp3dec-Debug-x86": {
-      "artifactName": "ext_pvmp3dec",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_pvmp3dec",
+    "tohex-Debug-x86": {
+      "artifactName": "tohex",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target tohex",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_pvmp3dec.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\tohex"
     },
     "ext_tremolo-Debug-x86": {
       "artifactName": "ext_tremolo",
@@ -122,21 +148,22 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_tremolo.a"
     },
+    "tobin-Debug-x86": {
+      "artifactName": "tobin",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target tobin",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\tobin"
+    },
+    "binasc-Debug-x86": {
+      "artifactName": "binasc",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target binasc",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\binasc"
+    },
     "ext_box2d-Debug-x86": {
       "artifactName": "ext_box2d",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\Box2D\\prebuilt\\android\\x86\\libbox2d.a"
-    },
-    "ext_chipmunk-Debug-x86": {
-      "artifactName": "ext_chipmunk",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\prebuilt\\android\\x86\\libchipmunk.a"
-    },
-    "ext_tinyxml2-Debug-x86": {
-      "artifactName": "ext_tinyxml2",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_tinyxml2",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_tinyxml2.a"
     },
     "ext_recast-Debug-x86": {
       "artifactName": "ext_recast",
@@ -149,10 +176,17 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a"
     },
-    "ext_crypto-Debug-x86": {
-      "artifactName": "ext_crypto",
+    "midifile-Debug-x86": {
+      "artifactName": "midifile",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midifile",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libcrypto.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\libmidifile.a"
+    },
+    "asciimidi-Debug-x86": {
+      "artifactName": "asciimidi",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target asciimidi",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\asciimidi"
     },
     "ext_curl-Debug-x86": {
       "artifactName": "ext_curl",
@@ -165,27 +199,10 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_md5.a"
     },
-    "external-Debug-x86": {
-      "artifactName": "external",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target external",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libexternal.a"
-    },
-    "oboe-Debug-x86": {
-      "artifactName": "oboe",
-      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target oboe",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\oboe\\liboboe.a"
-    },
     "ext_zlib-Debug-x86": {
       "artifactName": "ext_zlib",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\zlib\\prebuilt\\android\\x86\\libz.a"
-    },
-    "linearmath-Debug-x86": {
-      "artifactName": "linearmath",
-      "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a"
     },
     "ext_clipper-Debug-x86": {
       "artifactName": "ext_clipper",
@@ -199,10 +216,11 @@
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxhash.a"
     },
-    "ext_jpeg-Debug-x86": {
-      "artifactName": "ext_jpeg",
+    "text2midi-Debug-x86": {
+      "artifactName": "text2midi",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target text2midi",
       "abi": "x86",
-      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\prebuilt\\android\\x86\\libjpeg.a"
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\text2midi"
     },
     "ext_websockets-Debug-x86": {
       "artifactName": "ext_websockets",
@@ -232,6 +250,186 @@
       "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target cpp_android_spec",
       "abi": "x86",
       "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\engine\\cocos\\platform\\libcpp_android_spec.a"
+    },
+    "tobinary-Debug-x86": {
+      "artifactName": "tobinary",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target tobinary",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\tobinary"
+    },
+    "80off-Debug-x86": {
+      "artifactName": "80off",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target 80off",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\80off"
+    },
+    "smfdur-Debug-x86": {
+      "artifactName": "smfdur",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target smfdur",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\smfdur"
+    },
+    "ext_webp-Debug-x86": {
+      "artifactName": "ext_webp",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\webp\\prebuilt\\android\\x86\\libwebp.a"
+    },
+    "midicat-Debug-x86": {
+      "artifactName": "midicat",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midicat",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midicat"
+    },
+    "toascii-Debug-x86": {
+      "artifactName": "toascii",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target toascii",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\toascii"
+    },
+    "createmidifile-Debug-x86": {
+      "artifactName": "createmidifile",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target createmidifile",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\createmidifile"
+    },
+    "midimixup-Debug-x86": {
+      "artifactName": "midimixup",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midimixup",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midimixup"
+    },
+    "midi2text-Debug-x86": {
+      "artifactName": "midi2text",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midi2text",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midi2text"
+    },
+    "ext_png-Debug-x86": {
+      "artifactName": "ext_png",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\png\\prebuilt\\android\\x86\\libpng.a"
+    },
+    "ext_cpufeatures-Debug-x86": {
+      "artifactName": "ext_cpufeatures",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_cpufeatures",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\engine\\external\\android-specific\\cpufeatures\\libext_cpufeatures.a"
+    },
+    "ext_xxtea-Debug-x86": {
+      "artifactName": "ext_xxtea",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_xxtea",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_xxtea.a"
+    },
+    "ext_pvmp3dec-Debug-x86": {
+      "artifactName": "ext_pvmp3dec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_pvmp3dec",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_pvmp3dec.a"
+    },
+    "textmidi-Debug-x86": {
+      "artifactName": "textmidi",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target textmidi",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\textmidi"
+    },
+    "mid2svg-Debug-x86": {
+      "artifactName": "mid2svg",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target mid2svg",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\mid2svg"
+    },
+    "mid2mat-Debug-x86": {
+      "artifactName": "mid2mat",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target mid2mat",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\mid2mat"
+    },
+    "midi2melody-Debug-x86": {
+      "artifactName": "midi2melody",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midi2melody",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midi2melody"
+    },
+    "ext_chipmunk-Debug-x86": {
+      "artifactName": "ext_chipmunk",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\chipmunk\\prebuilt\\android\\x86\\libchipmunk.a"
+    },
+    "shutak-Debug-x86": {
+      "artifactName": "shutak",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target shutak",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\shutak"
+    },
+    "ext_tinyxml2-Debug-x86": {
+      "artifactName": "ext_tinyxml2",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target ext_tinyxml2",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libext_tinyxml2.a"
+    },
+    "miditime-Debug-x86": {
+      "artifactName": "miditime",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target miditime",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\miditime"
+    },
+    "sysextest-Debug-x86": {
+      "artifactName": "sysextest",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target sysextest",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\sysextest"
+    },
+    "ext_crypto-Debug-x86": {
+      "artifactName": "ext_crypto",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\openssl\\prebuilt\\android\\x86\\libcrypto.a"
+    },
+    "createmidifile2-Debug-x86": {
+      "artifactName": "createmidifile2",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target createmidifile2",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\createmidifile2"
+    },
+    "external-Debug-x86": {
+      "artifactName": "external",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target external",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\lib\\libexternal.a"
+    },
+    "todec-Debug-x86": {
+      "artifactName": "todec",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target todec",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\todec"
+    },
+    "midi2notes-Debug-x86": {
+      "artifactName": "midi2notes",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target midi2notes",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\midi2notes"
+    },
+    "linearmath-Debug-x86": {
+      "artifactName": "linearmath",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\bullet\\prebuilt\\android\\x86\\libLinearMath.a"
+    },
+    "vlv-Debug-x86": {
+      "artifactName": "vlv",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target vlv",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\vlv"
+    },
+    "ext_jpeg-Debug-x86": {
+      "artifactName": "ext_jpeg",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\cocos2d\\external\\jpeg\\prebuilt\\android\\x86\\libjpeg.a"
+    },
+    "mid2mtb-Debug-x86": {
+      "artifactName": "mid2mtb",
+      "buildCommand": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86 --target mid2mtb",
+      "abi": "x86",
+      "output": "C:\\Users\\Jugbot\\Documents\\GitHub\\Allegro-Learning\\proj.android\\app\\.cxx\\cmake\\debug\\x86\\midifile\\mid2mtb"
     }
   }
 }

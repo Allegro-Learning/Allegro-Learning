@@ -12,7 +12,7 @@ private:
 public:
     virtual bool init();
 
-    Vector<SongLevel> getSongNames();
+    cocos2d::Vector<SongLevel> getSongNames();
 
     SongLevel loadSong();
 };

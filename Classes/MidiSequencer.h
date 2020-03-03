@@ -10,6 +10,6 @@ private:
     
 public:
     virtual bool init();
-}
+};
 
 #endif

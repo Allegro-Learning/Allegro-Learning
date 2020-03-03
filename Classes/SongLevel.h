@@ -7,6 +7,8 @@
 #include "MidiSequencer.h"
 #include "MidiStream.h"
 
+cocos2d::ui::Scale9Sprite* makeSprite(float start, int pitch, float duration);
+
 class SongLevel {
 public:
     struct Stats {
@@ -30,7 +32,7 @@ private:
     // bool ended = false;
 public:
     Stats stats;
-    virtual bool init(MidiReader& instrument_midi, MidiSequencer& song_midi, char* song_name);
+    virtual bool init(MidiReader& instrument_midi, MidiSequencer& song_midi, char* song_name, int difficulty);
     void start();
     void pause();
     bool completed();
