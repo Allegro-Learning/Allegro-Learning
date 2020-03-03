@@ -55,14 +55,19 @@ if(APPLE OR WINDOWS)
 endif()
 
 # add cross-platforms source files and header files 
-list(APPEND GAME_SOURCE
-     Classes/AppDelegate.cpp
-     Classes/HelloWorldScene.cpp
-     )
-list(APPEND GAME_HEADER
-     Classes/AppDelegate.h
-     Classes/HelloWorldScene.h
-     )
+# list(APPEND GAME_SOURCE
+#      Classes/AppDelegate.cpp
+#      Classes/HelloWorldScene.cpp
+#      Classes/GameScene.cpp
+#      )
+# list(APPEND GAME_HEADER
+#      Classes/AppDelegate.h
+#      Classes/HelloWorldScene.h
+#      Classes/GameScene.h
+#      )
+# add all files automatically
+file(GLOB GAME_HEADER "Classes/*.h")
+file(GLOB GAME_SOURCE "Classes/*.cpp")
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
@@ -157,3 +162,17 @@ if(LINUX OR WINDOWS)
     cocos_get_resource_path(APP_RES_DIR ${APP_NAME})
     cocos_copy_target_res(${APP_NAME} LINK_TO ${APP_RES_DIR} FOLDERS ${GAME_RES_FOLDER})
 endif()
+
+# thrid party libraries (added manually)
+
+# set(OBOE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/oboe)
+# add_subdirectory(${OBOE_DIR} ./oboe)
+# include_directories(${OBOE_DIR}/include)
+
+# set(MIDIFILE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/midifile)
+# add_subdirectory(${MIDIFILE_DIR} ./midifile)
+# include_directories(${MIDIFILE_DIR}/include)
+
+# set(CATCH_DIR ${CMAKE_CURRENT_SOURCE_DIR}/catch)
+# add_subdirectory(${CATCH_DIR} ./catch)
+# include_directories(${CATCH_DIR}/include)
