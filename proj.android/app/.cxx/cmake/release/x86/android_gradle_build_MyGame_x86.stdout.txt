@@ -1,2 +1,0 @@
-[1/2] Building CXX object CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
-[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\release\obj\x86\libMyGame.so
