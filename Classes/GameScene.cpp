@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "SongLevel.h"
 
 USING_NS_CC;
 
@@ -15,10 +16,11 @@ bool Game::init() {
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    Sprite test;
+    SongLevel* level = new SongLevel("Miku", 1);
+    this->addChild(level->getLayer());
 
     auto background = DrawNode::create();
-    background->drawSolidRect(origin, visibleSize, Color4F(0.6,0.6,0.6,1.0));
+    background->drawSolidRect(origin, visibleSize, Color4F(0.1f,0.6f,1.0f,1.0f));
     this->addChild(background);
     
     return true;

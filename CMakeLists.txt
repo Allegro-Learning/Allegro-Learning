@@ -43,6 +43,20 @@ if(NOT DEFINED BUILD_ENGINE_DONE) # to test AllegroLearning into root project
     add_subdirectory(${COCOS2DX_ROOT_PATH}/cocos ${ENGINE_BINARY_PATH}/cocos/core)
 endif()
 
+# thrid party libraries (added manually)
+
+set(OBOE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/oboe)
+add_subdirectory(${OBOE_DIR} ./oboe)
+include_directories(${OBOE_DIR}/include)
+
+set(MIDIFILE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/midifile)
+add_subdirectory(${MIDIFILE_DIR} ./midifile)
+include_directories(${MIDIFILE_DIR}/include)
+
+set(CATCH_DIR ${CMAKE_CURRENT_SOURCE_DIR}/catch)
+add_subdirectory(${CATCH_DIR} ./catch)
+include_directories(${CATCH_DIR}/include)
+
 # record sources, headers, resources...
 set(GAME_SOURCE)
 set(GAME_HEADER)
@@ -55,19 +69,38 @@ if(APPLE OR WINDOWS)
 endif()
 
 # add cross-platforms source files and header files 
-# list(APPEND GAME_SOURCE
-#      Classes/AppDelegate.cpp
-#      Classes/HelloWorldScene.cpp
-#      Classes/GameScene.cpp
-#      )
-# list(APPEND GAME_HEADER
-#      Classes/AppDelegate.h
-#      Classes/HelloWorldScene.h
-#      Classes/GameScene.h
-#      )
+list(APPEND GAME_SOURCE
+    Classes/AppDelegate.cpp
+    Classes/GameSettings.cpp
+    Classes/SongLevel.cpp
+    Classes/MidiSequencer.cpp
+    Classes/MidiStream.cpp
+    Classes/MidiReader.cpp
+    Classes/GameScene.cpp
+    midifile/src/Binasc.cpp
+    midifile/src/MidiEvent.cpp
+    midifile/src/MidiEventList.cpp
+    midifile/src/MidiFile.cpp
+    midifile/src/MidiMessage.cpp
+)
+list(APPEND GAME_HEADER
+    Classes/AppDelegate.h
+    Classes/GameSettings.h
+    Classes/SongLevel.h
+    Classes/MidiSequencer.h
+    Classes/MidiStream.h
+    Classes/MidiReader.h
+    Classes/GameScene.h
+    midifile/include/Binasc.h
+    midifile/include/MidiEvent.h
+    midifile/include/MidiEventList.h
+    midifile/include/MidiFile.h
+    midifile/include/MidiMessage.h
+)
+
 # add all files automatically
-file(GLOB GAME_HEADER "Classes/*.h")
-file(GLOB GAME_SOURCE "Classes/*.cpp")
+# file(GLOB GAME_HEADER "Classes/*.h")
+# file(GLOB GAME_SOURCE "Classes/*.cpp")
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
@@ -162,17 +195,3 @@ if(LINUX OR WINDOWS)
     cocos_get_resource_path(APP_RES_DIR ${APP_NAME})
     cocos_copy_target_res(${APP_NAME} LINK_TO ${APP_RES_DIR} FOLDERS ${GAME_RES_FOLDER})
 endif()
-
-# thrid party libraries (added manually)
-
-set(OBOE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/oboe)
-add_subdirectory(${OBOE_DIR} ./oboe)
-include_directories(${OBOE_DIR}/include)
-
-set(MIDIFILE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/midifile)
-add_subdirectory(${MIDIFILE_DIR} ./midifile)
-include_directories(${MIDIFILE_DIR}/include)
-
-set(CATCH_DIR ${CMAKE_CURRENT_SOURCE_DIR}/catch)
-add_subdirectory(${CATCH_DIR} ./catch)
-include_directories(${CATCH_DIR}/include)

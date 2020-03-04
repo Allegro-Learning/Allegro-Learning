@@ -9,7 +9,7 @@ class MidiStream {
 private:
     
 public:
-    virtual bool init();
+    MidiStream();
     virtual void update(int tick);
     virtual std::vector<char*> messages() = 0;
 };

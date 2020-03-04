@@ -1,5 +1,9 @@
 #include "MidiReader.h"
 
-bool MidiReader::init() {
+MidiReader::MidiReader() {
+    
+}
 
+std::vector<char*> MidiReader::messages() {
+    return std::vector<char*>();
 }

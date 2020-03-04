@@ -11,28 +11,29 @@ cocos2d::Sprite* makeSprite(float start, int pitch, float duration);
 
 class SongLevel {
 public:
-    struct Stats {
-        int total_notes;
-        int perfect;
-        int good;
-        int bad;
-        int missed;
-    };
-    struct Note {
-        int pitch;
-        float start;
-        float duration;
-    };
+    // struct Stats {
+    //     int total_notes;
+    //     int perfect;
+    //     int good;
+    //     int bad;
+    //     int missed;
+    // };
+    // struct Note {
+    //     int pitch;
+    //     float start;
+    //     float duration;
+    // };
 private:
     MidiStream* inst_midi;
     MidiStream* song_midi;
-    char* song_name;
+    const char* song_name;
     int song_audio_ID;
     cocos2d::Vector<cocos2d::Sprite*> notes;
+    cocos2d::Layer* layer;
     // bool ended = false;
 public:
-    Stats stats;
-    virtual bool init(MidiReader& instrument_midi, MidiSequencer& song_midi, char* song_name, int difficulty);
+    SongLevel(const char* song_name, int difficulty);
+    cocos2d::Layer* getLayer();
     void start();
     void pause();
     bool completed();

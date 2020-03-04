@@ -9,7 +9,8 @@ class MidiSequencer : public MidiStream {
 private:
     
 public:
-    virtual bool init();
+    MidiSequencer();
+    std::vector<char*> messages();
 };
 
 #endif
