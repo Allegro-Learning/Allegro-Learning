@@ -64,6 +64,8 @@ bool MainMenu::init()
                                   {
                                       switch (type)
                                       {
+                                          default:
+                                              break;
                                           case cocos2d::ui::Widget::TouchEventType::BEGAN:
                                               break;
                                           case cocos2d::ui::Widget::TouchEventType::MOVED:
@@ -81,7 +83,7 @@ bool MainMenu::init()
 
     //SETTINGS BUTTON
     auto settingsButton = Button::create("button.png", "buttonPress.png");
-    settingsButton->setTitleText("Settinngs");
+    settingsButton->setTitleText("Settings");
     settingsButton->setTitleFontName("fonts/Marker Felt.ttf");
     settingsButton->setTitleFontSize(12.0f);
     settingsButton->setPosition(Vec2(winSize.width / 2, winSize.height / 2 - 70));
@@ -89,6 +91,8 @@ bool MainMenu::init()
         {
             switch (type)
             {
+            default:
+                break;
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:

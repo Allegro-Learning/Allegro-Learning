@@ -66,7 +66,7 @@ bool Game::init()
     else
     {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) + 70));
+        label->setPosition(Vec2(winSize.width / 2, (3*winSize.height / 4)));
 
         // add the label as a child to this layer
         this->addChild(label, 1);

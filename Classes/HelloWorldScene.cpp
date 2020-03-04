@@ -72,7 +72,7 @@ bool HelloWorld::init()
     button->setTitleText("Continue");
     button->setTitleFontName("fonts/Marker Felt.ttf");
     button->setTitleFontSize(12.0f);
-    button->setPosition(Vec2(winSize.width / 2, winSize.height / 2 - 100));
+    button->setPosition(Vec2(winSize.width / 2, (winSize.height / 4)));
 
     button->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
         {
@@ -117,7 +117,7 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
 
-    auto label = Label::createWithTTF("Hello Dingus", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
     if (label == nullptr)
     {
         problemLoading("'fonts/Marker Felt.ttf'");

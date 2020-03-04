@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669",
+  "ndkFolder": "C:\\Users\\Khoa\\AppData\\Local\\Android\\Sdk\\ndk-bundle",
   "messages": [
     {
       "level": "INFO",
@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669"
+      "message": "ndk.dir in local.properties is not set"
     },
     {
       "level": "INFO",
@@ -15,27 +15,15 @@
     },
     {
       "level": "INFO",
-      "message": "sdkFolder is C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk"
+      "message": "sdkFolder is C:\\Users\\Khoa\\AppData\\Local\\Android\\Sdk"
     },
     {
       "level": "INFO",
-      "message": "Considering C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669 by ndk.dir"
+      "message": "Considering C:\\Users\\Khoa\\AppData\\Local\\Android\\Sdk\\ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
-      "message": "Considering C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk-bundle in SDK ndk-bundle folder"
-    },
-    {
-      "level": "INFO",
-      "message": "Considering C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669 in SDK ndk folder"
-    },
-    {
-      "level": "INFO",
-      "message": "Rejected C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk-bundle in SDK ndk-bundle folder because that location has no source.properties"
-    },
-    {
-      "level": "INFO",
-      "message": "Found requested ndk.dir (C:\\Users\\Jugbot\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669) which has version 21.0.6113669"
+      "message": "No user requested version, choosing C:\\Users\\Khoa\\AppData\\Local\\Android\\Sdk\\ndk-bundle which is version 21.0.6113669"
     }
   ]
 }

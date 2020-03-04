@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/cocos
+# Install script for directory: C:/Users/Khoa/Documents/GitHub/Allegro-Learning/cocos2d/cocos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86/engine/external/cmake_install.cmake")
+  include("C:/Users/Khoa/Documents/GitHub/Allegro-Learning/proj.android/app/.cxx/cmake/debug/x86/engine/external/cmake_install.cmake")
 
 endif()
 

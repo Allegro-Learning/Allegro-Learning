@@ -56,18 +56,31 @@ bool GameSettings::init() {
     //SELECT SONG SCROLL VIEW (CAN USE A LIST VIEW AS WELL)
     ScrollView *scrollView = ScrollView::create();
     scrollView->setDirection(ScrollView::Direction::VERTICAL);
-    scrollView->setContentSize(Size(300, 200));
+    scrollView->setContentSize(Size(winSize.width, winSize.height / 2));
     scrollView->setInnerContainerSize(Size(1280, 2500));
     scrollView->setBounceEnabled(true);
     scrollView->setAnchorPoint(Vec2(0.5, 0.5));
-    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 2 + origin.y));
+    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 4 + origin.y));
     //add 50 temporary buttons to scrollView
     for (int i = 0; i < 50; i++) {
+        auto label = Label::createWithTTF("Setting Name", "fonts/Marker Felt.ttf", 12);
+        if (label == nullptr)
+        {
+            //problemLoading("'fonts/Marker Felt.ttf'");
+        }
+        else
+        {
+            // position the label on the center of the screen
+            label->setPosition(Vec2(scrollView->getContentSize().width / 6, i * 50));
+
+            // add the label as a child to this layer
+            scrollView->addChild(label, 1);
+        }
         Slider *slider = Slider::create();
         slider->loadBarTexture("buttonPress.png");
         slider->loadSlidBallTextureNormal("ball.png");
         slider->loadProgressBarTexture("button.png");
-        slider->setPosition(Vec2(scrollView->getContentSize().width / 2, i * 50));
+        slider->setPosition(Vec2(2 * scrollView->getContentSize().width / 3, i * 50));
         scrollView->addChild(slider);
 
     }
@@ -84,7 +97,7 @@ bool GameSettings::init() {
         //problemLoading("'fonts/Marker Felt.ttf'");
     } else {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2 - 150, (winSize.height / 2) + 110));
+        label->setPosition(Vec2(winSize.width / 2, (3*winSize.height / 4)));
 
         // add the label as a child to this layer
         this->addChild(label, 1);
@@ -92,12 +105,15 @@ bool GameSettings::init() {
 
     //Back BUTTON
     auto backButton = Button::create("button.png", "buttonPress.png");
+    backButton->setScale(0.75, 0.75);
     backButton->setTitleText("Back");
     backButton->setTitleFontName("fonts/Marker Felt.ttf");
     backButton->setTitleFontSize(12.0f);
-    backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) - 115));
+    backButton->setPosition(Vec2(winSize.width / 5, 3 * winSize.height / 4));
     backButton->addTouchEventListener([&](Ref *sender, Widget::TouchEventType type) {
         switch (type) {
+            default:
+                break;
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:
@@ -105,10 +121,6 @@ bool GameSettings::init() {
             case cocos2d::ui::Widget::TouchEventType::ENDED:
                 // create a scene. it's an autorelease object
                 auto scene = MainMenu::createScene();
-
-<<<<<<< Updated upstream
-GameSettings GAME_SETTINGS;
-=======
                 // run
                 Director::getInstance()->replaceScene(scene);
                 break;
@@ -117,4 +129,3 @@ GameSettings GAME_SETTINGS;
     this->addChild(backButton);
     return true;
 }
->>>>>>> Stashed changes

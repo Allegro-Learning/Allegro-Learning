@@ -25,6 +25,7 @@
 #include "SongSelectScene.h"
 #include "PlayGameScene.h"
 #include "MainMenuScene.h"
+#include "GameSettings.h"
 #include "extensions/cocos-ext.h"
 #include "ui\CocosGUI.h"
 USING_NS_CC;
@@ -62,7 +63,7 @@ bool SongSelect::init()
     scrollView->setInnerContainerSize(Size(1280,2500));
     scrollView->setBounceEnabled(true);
     scrollView->setAnchorPoint(Vec2(0.5, 0.5));
-    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 2 + origin.y));
+    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 4 + origin.y));
     //add 50 temporary buttons to scrollView
     for (int i = 0; i < 50; i++) {
         Button *button = Button::create("button.png", "buttonPress.png");
@@ -74,6 +75,8 @@ bool SongSelect::init()
             {
                 switch (type)
                 {
+                default:
+                    break;
                 case cocos2d::ui::Widget::TouchEventType::BEGAN:
                     break;
                 case cocos2d::ui::Widget::TouchEventType::MOVED:
@@ -98,7 +101,7 @@ bool SongSelect::init()
     // add a label shows "Hello World"
     // create and initialize a label
 
-    auto label = Label::createWithTTF("Select", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Select Song", "fonts/Marker Felt.ttf", 24);
     if (label == nullptr)
     {
         //problemLoading("'fonts/Marker Felt.ttf'");
@@ -106,7 +109,7 @@ bool SongSelect::init()
     else
     {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2 - 150, (winSize.height / 2) + 110));
+        label->setPosition(Vec2(winSize.width / 2, (3*winSize.height / 4)));
 
         // add the label as a child to this layer
         this->addChild(label, 1);
@@ -114,14 +117,17 @@ bool SongSelect::init()
 
     //Back BUTTON
     auto backButton = Button::create("button.png", "buttonPress.png");
+    backButton->setScale(0.75, 0.75);
     backButton->setTitleText("Back");
     backButton->setTitleFontName("fonts/Marker Felt.ttf");
     backButton->setTitleFontSize(12.0f);
-    backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2)-115));
+    backButton->setPosition(Vec2(winSize.width / 5, 3 * winSize.height / 4));
     backButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
         {
             switch (type)
             {
+            default:
+                break;
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:
@@ -134,8 +140,31 @@ bool SongSelect::init()
                 Director::getInstance()->replaceScene(scene);
                 break;
             }
+
         });
     this->addChild(backButton);
+    auto settingsButton = Button::create("settings.png", "settings.png");
+    settingsButton->setScale(2, 2);
+    settingsButton->setPosition(Vec2(4 * winSize.width / 5, 3 * winSize.height / 4));
+    settingsButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
+    {
+        switch (type)
+        {
+            default:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::BEGAN:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::MOVED:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::ENDED:
+                // create a scene. it's an autorelease object
+                auto scene = GameSettings::createScene();
+                // run
+                Director::getInstance()->replaceScene(scene);
+                break;
+        }
+    });
+    this->addChild(settingsButton);
     return true;
 }
 

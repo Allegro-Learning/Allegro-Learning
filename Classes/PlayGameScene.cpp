@@ -26,6 +26,7 @@
 #include "SongSelectScene.h"
 #include "StatsScene.h"
 #include "MainMenuScene.h"
+#include "GameSettings.h"
 #include "extensions/cocos-ext.h"
 #include "ui\CocosGUI.h"
 USING_NS_CC;
@@ -64,6 +65,8 @@ bool PlayGame::init()
         {
             switch (type)
             {
+            default:
+                break;
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:
@@ -96,7 +99,7 @@ bool PlayGame::init()
     else
     {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) + 110));
+        label->setPosition(Vec2(winSize.width / 2, (3*winSize.height / 4)));
 
         // add the label as a child to this layer
         this->addChild(label, 1);
@@ -107,25 +110,48 @@ bool PlayGame::init()
     backButton->setTitleText("Back");
     backButton->setTitleFontName("fonts/Marker Felt.ttf");
     backButton->setTitleFontSize(12.0f);
-    backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) - 115));
+    backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 4)));
     backButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
         {
             switch (type)
             {
+                default:
+                    break;
+                case cocos2d::ui::Widget::TouchEventType::BEGAN:
+                    break;
+                case cocos2d::ui::Widget::TouchEventType::MOVED:
+                    break;
+                case cocos2d::ui::Widget::TouchEventType::ENDED:
+                    // create a scene. it's an autorelease object
+                    auto scene = SongSelect::createScene();
+                    // run
+                    Director::getInstance()->replaceScene(scene);
+                    break;
+            }
+        });
+    this->addChild(backButton);
+    auto settingsButton = Button::create("settings.png", "settings.png");
+    settingsButton->setScale(2, 2);
+    settingsButton->setPosition(Vec2(4 * winSize.width / 5, 3 * winSize.height / 4));
+    settingsButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
+    {
+        switch (type)
+        {
+            default:
+                break;
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:
                 break;
             case cocos2d::ui::Widget::TouchEventType::ENDED:
                 // create a scene. it's an autorelease object
-                auto scene = SongSelect::createScene();
-
+                auto scene = GameSettings::createScene();
                 // run
                 Director::getInstance()->replaceScene(scene);
                 break;
-            }
-        });
-    this->addChild(backButton);
+        }
+    });
+    this->addChild(settingsButton);
     return true;
 }
 

@@ -64,7 +64,7 @@ bool Stats::init()
     // add a label shows "Hello World"
     // create and initialize a label
 
-    auto label = Label::createWithTTF("STATS SCENE:TBA", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("SONG NAME", "fonts/Marker Felt.ttf", 24);
     if (label == nullptr)
     {
         //problemLoading("'fonts/Marker Felt.ttf'");
@@ -72,18 +72,41 @@ bool Stats::init()
     else
     {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) + 110));
+        label->setPosition(Vec2(winSize.width / 2, (3*winSize.height / 4)));
 
         // add the label as a child to this layer
         this->addChild(label, 1);
     }
+    ScrollView *scrollView = ScrollView::create();
+    scrollView->setDirection(ScrollView::Direction::VERTICAL);
+    scrollView->setContentSize(Size(300, 200));
+    scrollView->setInnerContainerSize(Size(1280, 2500));
+    scrollView->setBounceEnabled(true);
+    scrollView->setAnchorPoint(Vec2(0.5, 0.5));
+    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 4 + origin.y));
+    //add 50 temporary buttons to scrollView
+    for (int i = 0; i < 50; i++) {
+        auto label = Label::createWithTTF("Sample Stat here", "fonts/Marker Felt.ttf", 12);
+        if (label == nullptr)
+        {
+            //problemLoading("'fonts/Marker Felt.ttf'");
+        }
+        else
+        {
+            // position the label on the center of the screen
+            label->setPosition(Vec2(scrollView->getContentSize().width / 2, i * 50));
 
+            // add the label as a child to this layer
+            scrollView->addChild(label, 1);
+        }
+    }
+    this->addChild(scrollView);
     //Back BUTTON
     auto backButton = Button::create("button.png", "buttonPress.png");
-    backButton->setTitleText("Back");
+    backButton->setTitleText("continue");
     backButton->setTitleFontName("fonts/Marker Felt.ttf");
     backButton->setTitleFontSize(12.0f);
-    backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) - 115));
+    backButton->setPosition(Vec2(4*winSize.width / 5, (winSize.height / 4)));
     backButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
         {
             switch (type)
