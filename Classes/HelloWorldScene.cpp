@@ -23,8 +23,14 @@
  ****************************************************************************/
 
 #include "HelloWorldScene.h"
-
+#include "MainMenuScene.h"
+#include "extensions/cocos-ext.h"
+#include "ui\CocosGUI.h"
 USING_NS_CC;
+//USING_NC_CC_EXT;
+using namespace ui;
+
+//using namespace ui;
 
 Scene* HelloWorld::createScene()
 {
@@ -47,7 +53,6 @@ bool HelloWorld::init()
     {
         return false;
     }
-
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
@@ -60,6 +65,33 @@ bool HelloWorld::init()
                                            "CloseNormal.png",
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
+
+    //start if button code to takeus to home screen
+    auto winSize = Director::getInstance()->getWinSize();
+    auto button = Button::create("button.png", "buttonPress.png");
+    button->setTitleText("Continue");
+    button->setTitleFontName("fonts/Marker Felt.ttf");
+    button->setTitleFontSize(12.0f);
+    button->setPosition(Vec2(winSize.width / 2, winSize.height / 2 - 100));
+
+    button->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
+        {
+            switch (type)
+            {
+            case cocos2d::ui::Widget::TouchEventType::BEGAN:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::MOVED:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::ENDED:
+                // create a scene. it's an autorelease object
+                auto scene = MainMenu::createScene();
+
+                // run
+                Director::getInstance()->replaceScene(scene);
+                break;
+            }
+        });
+    this->addChild(button);
 
     if (closeItem == nullptr ||
         closeItem->getContentSize().width <= 0 ||

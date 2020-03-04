@@ -22,8 +22,9 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-
-#include "GameSettings.h"
+#include "PlayGameScene.h"
+#include "SongSelectScene.h"
+#include "StatsScene.h"
 #include "MainMenuScene.h"
 #include "extensions/cocos-ext.h"
 #include "ui\CocosGUI.h"
@@ -31,18 +32,20 @@ USING_NS_CC;
 //USING_NC_CC_EXT;
 using namespace ui;
 
-Scene* GameSettings::createScene()
+Scene* PlayGame::createScene()
 {
-    return GameSettings::create();
+    return PlayGame::create();
 }
 
 
 
 // on "init" you need to initialize your instance
-bool GameSettings::init() {
+bool PlayGame::init()
+{
     //////////////////////////////
     // 1. super init first
-    if (!Scene::init()) {
+    if (!Scene::init())
+    {
         return false;
     }
 
@@ -51,27 +54,33 @@ bool GameSettings::init() {
 
     auto winSize = Director::getInstance()->getWinSize();
 
+    //button will temporarily move to stats screen since game cant play
+    auto selectButton = Button::create("button.png", "buttonPress.png");
+    selectButton->setTitleText("Go to Stats");
+    selectButton->setTitleFontName("fonts/Marker Felt.ttf");
+    selectButton->setTitleFontSize(12.0f);
+    selectButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2)));
+    selectButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
+        {
+            switch (type)
+            {
+            case cocos2d::ui::Widget::TouchEventType::BEGAN:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::MOVED:
+                break;
+            case cocos2d::ui::Widget::TouchEventType::ENDED:
+                // create a scene. it's an autorelease object
+                auto scene = Stats::createScene();
+
+                // run
+                Director::getInstance()->replaceScene(scene);
+                break;
+            }
+        });
+    this->addChild(selectButton);
 
 
-    //SELECT SONG SCROLL VIEW (CAN USE A LIST VIEW AS WELL)
-    ScrollView *scrollView = ScrollView::create();
-    scrollView->setDirection(ScrollView::Direction::VERTICAL);
-    scrollView->setContentSize(Size(300, 200));
-    scrollView->setInnerContainerSize(Size(1280, 2500));
-    scrollView->setBounceEnabled(true);
-    scrollView->setAnchorPoint(Vec2(0.5, 0.5));
-    scrollView->setPosition(Vec2(winSize.width / 2 + origin.x, winSize.height / 2 + origin.y));
-    //add 50 temporary buttons to scrollView
-    for (int i = 0; i < 50; i++) {
-        Slider *slider = Slider::create();
-        slider->loadBarTexture("buttonPress.png");
-        slider->loadSlidBallTextureNormal("ball.png");
-        slider->loadProgressBarTexture("button.png");
-        slider->setPosition(Vec2(scrollView->getContentSize().width / 2, i * 50));
-        scrollView->addChild(slider);
-
-    }
-    this->addChild(scrollView);
+    
 
     /////////////////////////////
     // 3. add your codes below...
@@ -79,12 +88,15 @@ bool GameSettings::init() {
     // add a label shows "Hello World"
     // create and initialize a label
 
-    auto label = Label::createWithTTF("Settings", "fonts/Marker Felt.ttf", 24);
-    if (label == nullptr) {
+    auto label = Label::createWithTTF("GAME SCENE:TBA", "fonts/Marker Felt.ttf", 24);
+    if (label == nullptr)
+    {
         //problemLoading("'fonts/Marker Felt.ttf'");
-    } else {
+    }
+    else
+    {
         // position the label on the center of the screen
-        label->setPosition(Vec2(winSize.width / 2 - 150, (winSize.height / 2) + 110));
+        label->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) + 110));
 
         // add the label as a child to this layer
         this->addChild(label, 1);
@@ -96,25 +108,24 @@ bool GameSettings::init() {
     backButton->setTitleFontName("fonts/Marker Felt.ttf");
     backButton->setTitleFontSize(12.0f);
     backButton->setPosition(Vec2(winSize.width / 2, (winSize.height / 2) - 115));
-    backButton->addTouchEventListener([&](Ref *sender, Widget::TouchEventType type) {
-        switch (type) {
+    backButton->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type)
+        {
+            switch (type)
+            {
             case cocos2d::ui::Widget::TouchEventType::BEGAN:
                 break;
             case cocos2d::ui::Widget::TouchEventType::MOVED:
                 break;
             case cocos2d::ui::Widget::TouchEventType::ENDED:
                 // create a scene. it's an autorelease object
-                auto scene = MainMenu::createScene();
+                auto scene = SongSelect::createScene();
 
-<<<<<<< Updated upstream
-GameSettings GAME_SETTINGS;
-=======
                 // run
                 Director::getInstance()->replaceScene(scene);
                 break;
-        }
-    });
+            }
+        });
     this->addChild(backButton);
     return true;
 }
->>>>>>> Stashed changes
+

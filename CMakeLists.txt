@@ -55,6 +55,7 @@ if(APPLE OR WINDOWS)
 endif()
 
 # add cross-platforms source files and header files 
+<<<<<<< Updated upstream
 # list(APPEND GAME_SOURCE
 #      Classes/AppDelegate.cpp
 #      Classes/HelloWorldScene.cpp
@@ -68,6 +69,28 @@ endif()
 # add all files automatically
 file(GLOB GAME_HEADER "Classes/*.h")
 file(GLOB GAME_SOURCE "Classes/*.cpp")
+=======
+list(APPEND GAME_SOURCE
+     Classes/AppDelegate.cpp
+     Classes/HelloWorldScene.cpp
+     Classes/MainMenuScene.cpp
+     Classes/SongSelectScene.cpp
+     Classes/GameSettings.cpp
+     Classes/PlayGameScene.cpp
+     Classes/StatsScene.cpp
+     )
+list(APPEND GAME_HEADER
+     Classes/AppDelegate.h
+     Classes/HelloWorldScene.h
+     Classes/MainMenuScene.h
+     Classes/SongSelectScene.h
+     Classes/GameSettings.h
+     Classes/PlayGameScene.h
+     Classes/StatsScene.h
+     )
+#file(GLOB GAME_HEADER "Classes/*.h")
+#file(GLOB GAME_SOURCE "Classes/*.cpp")
+>>>>>>> Stashed changes
 
 if(ANDROID)
     # change APP_NAME to the share library name for Android, it's value depend on AndroidManifest.xml
