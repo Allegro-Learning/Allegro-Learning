@@ -4,11 +4,12 @@
 
 USING_NS_CC;
 
-ui::Scale9Sprite* makeSprite(float start, int pitch, float duration) {
-    ui::Scale9Sprite* sprite = ui::Scale9Sprite::create("note.png");
+Sprite* makeSprite(float start, int pitch, float duration) {
+    Sprite* sprite = Sprite::create("note.png");
+    sprite->setCenterRectNormalized(Rect(0.25f, 0.25f, 0.75f, 0.75f));
     sprite->setAnchorPoint(Vec2(0, 0));
     float width = 1.0f / (GAME_SETTINGS.OCTAVE_RANGE * 8);
-    float height = duration * GAME_SETTINGS.NOTE_SPEED // TODO
+    float height = duration * GAME_SETTINGS.NOTE_SPEED; // TODO
     sprite->setContentSize(Size(width, height));
     return sprite;
 }
@@ -32,8 +33,8 @@ bool SongLevel::init(MidiReader& instrument_midi, MidiSequencer& song_midi, char
             double duration = event.getDurationInSeconds();
             double start = event.seconds;
             int pitch = event.getKeyNumber();
-            
-            this->notes.pushBack(makeSprite(start, pitch, duration));
+            Sprite* sprite = makeSprite(start, pitch, duration);
+            this->notes.pushBack(sprite);
         }
     }
 }

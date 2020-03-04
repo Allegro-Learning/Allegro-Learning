@@ -7,7 +7,7 @@
 #include "MidiSequencer.h"
 #include "MidiStream.h"
 
-cocos2d::ui::Scale9Sprite* makeSprite(float start, int pitch, float duration);
+cocos2d::Sprite* makeSprite(float start, int pitch, float duration);
 
 class SongLevel {
 public:
@@ -28,7 +28,7 @@ private:
     MidiStream* song_midi;
     char* song_name;
     int song_audio_ID;
-    cocos2d::Vector<cocos2d::Sprite> notes;
+    cocos2d::Vector<cocos2d::Sprite*> notes;
     // bool ended = false;
 public:
     Stats stats;

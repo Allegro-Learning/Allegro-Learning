@@ -1,16 +1,24 @@
 #ifndef __GAME_SETTINGS_SCENE_H__
 #define __GAME_SETTINGS_SCENE_H__
 
-typedef struct GameSettings {
+class GameSettings {
+private:
+    static GameSettings* instance;
+protected:
+    GameSettings();
+    virtual ~GameSettings();
 public:
+    static GameSettings* getInstance();
+    static void destroyInstance();
     // Delay in seconds for syncing hardware input to the display.  
-    float DELAY = 0.0f;
+    float getDelay();
+    void setDelay(float delay);
     // Time in seconds it takes for a note to enter the view and reach the delimeter. 
-    float NOTE_TIME = 1.0f;
+    float getNoteTime();
+    void setNoteTime(float delay);
     // Octave range of keyboard, 8 full steps and 12 notes per octave.
-    int OCTAVE_RANGE = 1; 
-} GameSettings;
-
-extern GameSettings GAME_SETTINGS;
+    int getOctaveRange();
+    void setOctaveRange(int octaves);
+};
 
 #endif
