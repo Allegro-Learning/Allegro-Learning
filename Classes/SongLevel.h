@@ -36,7 +36,7 @@ public:
     void start();
     void pause();
     bool completed();
-    void update(float time);
+    void update(float render_time);
     void draw(float time);
 };
 

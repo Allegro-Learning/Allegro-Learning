@@ -1311,3 +1311,9 @@
 530	11223	0	CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o	dd2c9a507fb5d46f
 41	11516	0	CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o	81b6ab0a655dc2ab
 53	11730	0	CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o	4c038aad0f755a35
+135	667	0	CMakeFiles/MyGame.dir/Classes/GameSettings.cpp.o	f00fefd7b3b6da06
+77	13435	0	CMakeFiles/MyGame.dir/Classes/MidiReader.cpp.o	bf73d69a56cd7a5c
+115	14120	0	CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o	81b6ab0a655dc2ab
+49	6862	0	CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o	ef93e11c4ebf3491
+54	7083	0	CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o	81b6ab0a655dc2ab
+49	5164	0	CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o	ef93e11c4ebf3491

@@ -1,19 +1,5 @@
-[1/8] Building CXX object CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
-[2/8] Building CXX object CMakeFiles/MyGame.dir/Classes/MidiReader.cpp.o
-[3/8] Building CXX object CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o
-[4/8] Building CXX object CMakeFiles/MyGame.dir/Classes/GameSettings.cpp.o
-[5/8] Building CXX object CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
-[6/8] Building CXX object CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o
-[7/8] Building CXX object CMakeFiles/MyGame.dir/proj.android/app/jni/hellocpp/main.cpp.o
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\MidiReader.cpp:5:1: warning: control reaches end of non-void function [-Wreturn-type]
-}
-^
-1 warning generated.
-FAILED: C:\Users\Jugbot\AppData\Local\Android\Sdk\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o -MF CMakeFiles\MyGame.dir\Classes\GameScene.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o -c C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\GameScene.cpp
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\GameScene.cpp:10:36: error: call to non-static member function without an object argument
-    if ( !Scene::init() || !Layer::init())
-                            ~~~~~~~^~~~
-1 error generated.
+[1/3] Building CXX object CMakeFiles/MyGame.dir/Classes/GameScene.cpp.o
+[2/3] Building CXX object CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o
 FAILED: C:\Users\Jugbot\AppData\Local\Android\Sdk\ndk\21.0.6113669\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DANDROID -DCOCOS2D_DEBUG=1 -DLWS_WITH_LIBUV -DMyGame_EXPORTS -DUSE_FILE32API -I../../../../../../Classes -I../../../../../../cocos2d/cocos/audio/include -I../../../../../../midifile/include -I../../../../../../cocos2d -I../../../../../../cocos2d/cocos -I../../../../../../cocos2d/extensions -I../../../../../../cocos2d/cocos/platform -I../../../../../../cocos2d/cocos/editor-support -I../../../../../../cocos2d/cocos/base -I../../../../../../cocos2d/cocos/platform/android -isystem ../../../../../../cocos2d/external/Box2D/include -isystem ../../../../../../cocos2d/external/chipmunk/include -isystem ../../../../../../cocos2d/external/freetype2/include/android/freetype2 -I../../../../../../cocos2d/external/recast/.. -isystem ../../../../../../cocos2d/external/bullet/include -isystem ../../../../../../cocos2d/external/bullet/include/bullet -isystem ../../../../../../cocos2d/external/jpeg/include/android -isystem ../../../../../../cocos2d/external/openssl/include/android -isystem ../../../../../../cocos2d/external/uv/include -isystem ../../../../../../cocos2d/external/webp/include/android -isystem ../../../../../../cocos2d/external/websockets/include/android -I../../../../../../cocos2d/external/tinyxml2/. -I../../../../../../cocos2d/external/xxhash/. -I../../../../../../cocos2d/external/xxtea/. -I../../../../../../cocos2d/external/clipper/. -I../../../../../../cocos2d/external/edtaa3func/. -I../../../../../../cocos2d/external/ConvertUTF/. -I../../../../../../cocos2d/external/poly2tri/.. -I../../../../../../cocos2d/external/md5/.. -isystem ../../../../../../cocos2d/external/curl/include/android -isystem ../../../../../../cocos2d/external/png/include/android -IC:/Users/Jugbot/AppData/Local/Android/Sdk/ndk/21.0.6113669/sources/android/cpufeatures -I../../../../../../cocos2d/external/android-specific/pvmp3dec/include -I../../../../../../cocos2d/external/android-specific/pvmp3dec/src -I../../../../../../cocos2d/external/android-specific/tremolo/. -isystem ../../../../../../cocos2d/external/zlib/include -I../../../../../../cocos2d/external/unzip/. -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC   -std=c++11 -MD -MT CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o -MF CMakeFiles\MyGame.dir\Classes\SongLevel.cpp.o.d -o CMakeFiles/MyGame.dir/Classes/SongLevel.cpp.o -c C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp
 C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:8:36: error: incomplete type 'cocos2d::ui::Scale9Sprite' named in nested name specifier
     ui::Scale9Sprite* sprite = ui::Scale9Sprite::create("note.png");
@@ -27,31 +13,17 @@ C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:9:11: er
 ../../../../../../cocos2d/cocos/renderer/CCTexture2D.h:48:11: note: forward declaration of 'cocos2d::ui::Scale9Sprite'
     class Scale9Sprite;
           ^
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:11:31: error: use of undeclared identifier 'NOTE_SPEED'
-    float height = duration * NOTE_SPEED // TODO
-                              ^
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:11:41: error: expected ';' at end of declaration
-    float height = duration * NOTE_SPEED // TODO
-                                        ^
-                                        ;
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:20:33: error: call to non-static member function without an object argument
-    auto midi_data = FileUtils::getStringFromFile("songs/" + song_name + ".mid");
-                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:20:60: error: invalid operands to binary expression ('const char [7]' and 'char *')
-    auto midi_data = FileUtils::getStringFromFile("songs/" + song_name + ".mid");
-                                                  ~~~~~~~~ ^ ~~~~~~~~~
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:27:9: error: no viable conversion from 'smf::MidiEventList' to 'int'
-    int track = midi_parser[difficulty];
-        ^       ~~~~~~~~~~~~~~~~~~~~~~~
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:37:10: error: expected ';' at end of declaration
-        }
+C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:11:45: error: no member named 'NOTE_SPEED' in 'GameSettings'
+    float height = duration * GAME_SETTINGS.NOTE_SPEED // TODO
+                              ~~~~~~~~~~~~~ ^
+C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:36:25: error: no matching member function for call to 'pushBack'
+            this->notes.pushBack(makeSprite(start, pitch, duration));
+            ~~~~~~~~~~~~^~~~~~~~
+../../../../../../cocos2d/cocos/base/CCVector.h:332:10: note: candidate function not viable: cannot convert argument of incomplete type 'ui::Scale9Sprite *' to 'cocos2d::Sprite' for 1st argument
+    void pushBack(T object)
          ^
-         ;
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:56:11: error: redefinition of 'time'
-    float time = AudioEngine::getCurrentTime(id);
-          ^
-C:\Users\Jugbot\Documents\GitHub\Allegro-Learning\Classes\SongLevel.cpp:54:30: note: previous definition is here
-void SongLevel::update(float time) {
-                             ^
-9 errors generated.
+../../../../../../cocos2d/cocos/base/CCVector.h:340:10: note: candidate function not viable: cannot convert argument of incomplete type 'ui::Scale9Sprite *' to 'const Vector<cocos2d::Sprite>' for 1st argument
+    void pushBack(const Vector<T>& other)
+         ^
+4 errors generated.
 ninja: build stopped: subcommand failed.

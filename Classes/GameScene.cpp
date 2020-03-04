@@ -7,7 +7,7 @@ Scene* Game::createScene() {
 }
 
 bool Game::init() {
-    if ( !Scene::init() || !Layer::init())
+    if ( !Scene::init())// || !Layer::init())
     {
         return false;
     }
@@ -25,9 +25,9 @@ bool Game::init() {
 }
 
 bool Game::onTouchBegan(Touch *touch, Event *event) {
-
+    return true;
 }
 
 bool Game::onTouchEnd(Touch *touch, Event *event) {
-
+    return true;
 }
