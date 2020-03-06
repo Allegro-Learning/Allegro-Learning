@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jugbot/Documents/GitHub/Allegro-Learning/cocos2d/external/bullet
+# Install script for directory: C:/Users/Khoa/Documents/GitHub/Allegro-Learning/cocos2d/external/bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

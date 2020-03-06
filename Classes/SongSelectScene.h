@@ -3,16 +3,16 @@
 
 #include "cocos2d.h"
 
-class SongSelectScene : public cocos2d::Scene
+class SongSelect : public cocos2d::Scene
 {
 public:
     static cocos2d::Scene* createScene();
 
     virtual bool init();
     
-    void songSelectCallback(cocos2d::Ref* pSender);
+    //void songSelectCallback(cocos2d::Ref* pSender);
     
-    CREATE_FUNC(SongSelectScene);
+    CREATE_FUNC(SongSelect);
 };
 
 #endif // __SONG_SELECT_SCENE_H__
