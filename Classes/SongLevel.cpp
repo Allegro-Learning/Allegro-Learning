@@ -17,28 +17,40 @@ cocos2d::Sprite* makeSprite(float start, int pitch, float duration) {
     return sprite;
 }
 
+struct membuf : std::streambuf
+{
+    membuf(unsigned char* begin, unsigned char* end) {
+        this->setg(reinterpret_cast<char *>(begin), reinterpret_cast<char *>(begin), reinterpret_cast<char *>(end));
+    }
+    membuf(char* begin, char* end) {
+        this->setg(begin, begin, end);
+    }
+};
+
 SongLevel::SongLevel(const char* song_name, int difficulty) {
     this->inst_midi = new MidiReader();
     this->song_midi = new MidiSequencer();
     this->song_name = song_name;
     this->layer = Layer::create();
     FileUtils* fm = FileUtils::getInstance();
-    std::string midi_data;
-    for (std::string& path : fm->listFiles("songs/" + std::string(song_name))) {
-        if (fm->getFileExtension(path) == "mid") {
-            midi_data = fm->getStringFromFile(path);
+    std::string midi_path;
+    for (std::string& fname : fm->listFiles("songs/" + std::string(song_name))) {
+        if (fm->getFileExtension(fname) == ".mid") {
+            midi_path = fm->fullPathForFilename("songs/" + std::string(song_name) + "/" + fname);
         }
     }
-    // assert(!midi_data.empty());
-    smf::MidiFile midi_parser;
-    midi_parser.read(midi_data);
-    midi_parser.absoluteTicks();
-    midi_parser.doTimeAnalysis();
+    Data midi_data = fm->getDataFromFile(midi_path);
+    char* midi_bytes = reinterpret_cast<char *>(midi_data.getBytes());
+    ssize_t midi_size = midi_data.getSize();
+    // log("MIDI DATA %s", fm->getDataFromFile(midi_path).getBytes());
+    membuf sbuf(midi_bytes, midi_bytes + sizeof(char) * midi_size);
+    std::istream in(&sbuf);
+    smf::MidiFile midi_parser(in);
     midi_parser.linkNotePairs();
+    midi_parser.doTimeAnalysis();
 
     smf::MidiEventList track = midi_parser[difficulty];
     int size = track.getSize();
-    // assert(size);
     for (int j=1; j<size; j++) {
         smf::MidiEvent event = track[j];
         if (event.isNoteOn()) {
@@ -47,7 +59,10 @@ SongLevel::SongLevel(const char* song_name, int difficulty) {
             int pitch = event.getKeyNumber();
             Sprite* sprite = makeSprite(start, pitch, duration);
             layer->addChild(sprite);
+            log("NOTE ON %i, %f, %f", pitch, start, duration);
             // this->notes.pushBack(sprite);
+        } else if (event.isNoteOff()) {
+            log("NOTE OFF %i, %f", event.getKeyNumber(), event.seconds);
         }
     }
 }
@@ -68,10 +83,6 @@ bool SongLevel::completed() {
 void SongLevel::update(float render_time) {
     int id = this->song_audio_ID;
     float time = AudioEngine::getCurrentTime(id);
-}
-
-void SongLevel::draw(float time) {
-    
 }
 
 cocos2d::Layer* SongLevel::getLayer() {
