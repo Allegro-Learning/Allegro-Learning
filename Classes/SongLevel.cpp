@@ -45,24 +45,33 @@ SongLevel::SongLevel(const char* song_name, int difficulty) {
     // log("MIDI DATA %s", fm->getDataFromFile(midi_path).getBytes());
     membuf sbuf(midi_bytes, midi_bytes + sizeof(char) * midi_size);
     std::istream in(&sbuf);
+    // smf::Binasc().outputStyleAscii(std::cout, in);
     smf::MidiFile midi_parser(in);
+    if (!midi_parser.status()) {
+        log("Bad midi file");
+        return;
+    }
     midi_parser.linkNotePairs();
     midi_parser.doTimeAnalysis();
+    // DEBUG
+    std::ostringstream os;
+    os << midi_parser;
+    std::string s=os.str();
+    log("%s", s.c_str());
+    // END DEBUG
 
-    smf::MidiEventList track = midi_parser[difficulty];
-    int size = track.getSize();
-    for (int j=1; j<size; j++) {
-        smf::MidiEvent event = track[j];
-        if (event.isNoteOn()) {
-            double duration = event.getDurationInSeconds();
-            double start = event.seconds;
-            int pitch = event.getKeyNumber();
+    int i = difficulty;
+    for (int j=0; j<midi_parser[i].getEventCount(); j++) {
+        if (midi_parser[i][j].isNoteOn()) {
+            double duration = midi_parser[i][j].getDurationInSeconds();
+            double start = midi_parser[i][j].seconds;
+            int pitch = midi_parser[i][j].getKeyNumber();
             Sprite* sprite = makeSprite(start, pitch, duration);
             layer->addChild(sprite);
             log("NOTE ON %i, %f, %f", pitch, start, duration);
             // this->notes.pushBack(sprite);
-        } else if (event.isNoteOff()) {
-            log("NOTE OFF %i, %f", event.getKeyNumber(), event.seconds);
+        } else if (midi_parser[i][j].isNoteOff()) {
+            log("NOTE OFF %i, %f", midi_parser[i][j].getKeyNumber(), midi_parser[i][j].seconds);
         }
     }
 }

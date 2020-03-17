@@ -16,7 +16,7 @@ bool Game::init() {
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    SongLevel* level = new SongLevel("Miku", 1);
+    SongLevel* level = new SongLevel("testing", 1);
     this->addChild(level->getLayer());
 
     auto background = DrawNode::create();
